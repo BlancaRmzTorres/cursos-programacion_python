@@ -4,11 +4,11 @@ Python es un lenguaje de programación de alto nivel, versátil y de propósito 
 En el ámbito educativo, Python es ampliamente utilizado en universidades y cursos en línea (como Coursera, edX o freeCodeCamp) porque su sintaxis es similar al inglés, lo que reduce la curva de aprendizaje. Por ejemplo, un simple "Hola Mundo" en Python es solo print("Hola Mundo"), comparado con lenguajes más verbosos como Java, donde requeriría una clase completa.
 
 ## Aplicaciones reales incluyen:
-•	Desarrollo web: Sitios como Instagram, Pinterest y Spotify usan Python en su backend.
-•	Ciencia de datos: Herramientas como Jupyter Notebook permiten análisis interactivos.
-•	Automatización: Scripts para tareas repetitivas, como procesar archivos o enviar emails.
-•	Inteligencia artificial: Modelos de IA en empresas como Google (con TensorFlow) o OpenAI.
-•	Juegos y multimedia: Bibliotecas como Pygame para desarrollo de juegos simples.
+- Desarrollo web: Sitios como Instagram, Pinterest y Spotify usan Python en su backend.
+- Ciencia de datos: Herramientas como Jupyter Notebook permiten análisis interactivos.
+- Automatización: Scripts para tareas repetitivas, como procesar archivos o enviar emails.
+- Inteligencia artificial: Modelos de IA en empresas como Google (con TensorFlow) o OpenAI.
+- Juegos y multimedia: Bibliotecas como Pygame para desarrollo de juegos simples.
 
 Ventajas de Python incluyen su comunidad activa (foros como Stack Overflow tienen millones de preguntas resueltas), su portabilidad (corre en Windows, macOS, Linux, etc.) y su integración con otros lenguajes (puedes llamar código C o Java desde Python). Desventajas podrían ser su velocidad de ejecución (más lento que C++ en bucles intensivos), aunque esto se mitiga con optimizaciones como Cython o el uso de bibliotecas compiladas.
 En resumen, Python no es solo un lenguaje, sino un ecosistema completo que fomenta la productividad y la innovación en programación.
