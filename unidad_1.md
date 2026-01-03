@@ -1,25 +1,2 @@
-Listo ✅
-Ya te desarrollé **cada punto** y lo generé como un **documento en Markdown**, estructurado y con nivel de **licenciatura**, incluyendo:
-
-* Objetivo de la unidad
-* Desarrollo completo de los **5 subtemas**
-* Ejemplos de código
-* Actividad práctica
-* Criterios de evaluación
-
-👉 Puedes **copiarlo directamente** para:
-
-* Moodle / Classroom
-* GitHub
-* Documento académico
-* Convertirlo a PDF o Word
-
-Si quieres, en el siguiente paso puedo:
-
-* 📑 Ajustarlo al **formato de planeación didáctica oficial**
-* 🧑‍🏫 Adaptarlo como **guion para clase**
-* 🖥️ Generar **diapositivas**
-* 📝 Crear **rúbrica detallada**
-* ⏱️ Ajustarlo a **1 hora o 3 horas**
-
-Dime cómo lo necesitas y para qué institución 👍
+## ¿Qué es Python?
+Python es un lenguaje de programación de alto nivel, versátil y de propósito general, diseñado para ser fácil de leer, escribir y mantener. Fue creado con el objetivo de priorizar la legibilidad del código, lo que lo hace ideal tanto para principiantes como para desarrolladores experimentados. Python se utiliza en una amplia gama de aplicaciones, desde el desarrollo web y la automatización de tareas hasta la inteligencia artificial, el análisis de datos, la programación científica y el desarrollo de juegos.
