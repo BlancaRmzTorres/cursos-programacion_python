@@ -8,7 +8,14 @@ Por ejemplo, un simple "Hola Mundo" en Python es solo
 ```python
     print("Hola Mundo")
 ```
-Comparado con lenguajes más verbosos como Java, donde requeriría una clase completa.
+Comparado con lenguajes más verbosos como C++, donde requeriría una clase completa.
+
+```#include <iostream> // Para entrada y salida
+
+int main() { // Función principal
+    std::cout << "¡Hola, mundo!" << std::endl; // Imprime el mensaje
+    return 0; // Indica que el programa terminó correctamente
+}```s
 
 ## Aplicaciones reales incluyen:
 - Desarrollo web: Sitios como Instagram, Pinterest y Spotify usan Python en su backend.
