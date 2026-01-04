@@ -10,7 +10,7 @@ Por ejemplo, un simple "Hola Mundo" en Python es solo
 ```
 Comparado con lenguajes más verbosos como C++, donde requeriría una clase completa.
 
-```#include <iostream> // Para entrada y salida
+```include <iostream> // Para entrada y salida
 
 int main() { // Función principal
     std::cout << "¡Hola, mundo!" << std::endl; // Imprime el mensaje
