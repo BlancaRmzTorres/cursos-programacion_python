@@ -140,18 +140,17 @@ class = "clase"      # palabra reservada → SyntaxError
 Son palabras que Python reserva para su propio uso (sentencias, operadores, etc.). No pueden usarse como identificadores.
 
 Puedes ver la lista completa ejecutando:
-Python
+
+```python
 import keyword
 print(keyword.kwlist)
-Lista completa de palabras reservadas en Python 3.12 (actual al 2026):
-Python
-['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await',
- 'break', 'class', 'continue', 'def', 'del', 'elif', 'else',
- 'except', 'finally', 'for', 'from', 'global', 'if', 'import',
- 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise',
- 'return', 'try', 'while', 'with', 'yield']
-•	Ejemplos de uso correcto:
-Python
+```
+
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await  'break', 'class', 'continue', 'def', 'del', 'elif', 'else',  'except', 'finally', 'for', 'from', 'global', 'if', 'import',  'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise',  'return', 'try', 'while', 'with', 'yield']
+
+Ejemplos de uso correcto:
+
+```python
 if edad >= 18:
     print("Mayor de edad")
 else:
@@ -162,20 +161,29 @@ for i in range(5):
 
 def saludar(nombre):
     return f"Hola, {nombre}"
-•	Ejemplo de error:
-Python
+```
+
+Ejemplo de error:
+
+```python
 def = 5        # SyntaxError: invalid syntax
 class = "A"    # SyntaxError
-Sintaxis
+```
+
+## Sintaxis
 La sintaxis de Python es uno de sus mayores diferenciadores: limpia, legible y basada en indentación.
+
 Uso de indentación
+
 Python usa la indentación (espacios o tabuladores) para delimitar bloques de código, en lugar de llaves {} como en otros lenguajes.
-•	Regla estricta:
-o	Generalmente se usan 4 espacios por nivel (recomendado por PEP 8).
-o	Todo el bloque debe tener la misma indentación.
-o	Mezclar tabuladores y espacios causa TabError.
-•	Ejemplo correcto:
-Python
+Regla estricta:
+- Generalmente se usan 4 espacios por nivel (recomendado por PEP 8).
+- Todo el bloque debe tener la misma indentación.
+- Mezclar tabuladores y espacios causa TabError.
+
+Ejemplo correcto:
+
+```python
 def calcular_area_rectangulo(base, altura):
     if base > 0 and altura > 0:
         area = base * altura
@@ -184,18 +192,25 @@ def calcular_area_rectangulo(base, altura):
     else:
         print("Base y altura deben ser positivas")
         return 0
-•	Ejemplo incorrecto:
-Python
+```
+
+Ejemplo incorrecto:
+
+```python
 def ejemplo_malo():
 if True:  # sin indentación → IndentationError
 print("Esto falla")
-•	Ventajas:
-o	Obliga a escribir código limpio y consistente.
-o	Mejora la legibilidad para equipos.
-•	Consejo: Configura tu editor (VS Code, PyCharm, etc.) para convertir tabuladores en 4 espacios automáticamente.
+```python
+
+Ventajas:
+- Obliga a escribir código limpio y consistente.
+- Mejora la legibilidad para equipos.
+
+Consejo: Configura tu editor (VS Code, PyCharm, etc.) para convertir tabuladores en 4 espacios automáticamente.
+
 Comentarios
 Los comentarios sirven para documentar el código y no se ejecutan.
-•	Comentarios de una línea: con #
+- Comentarios de una línea: con #
 Python
 # Esto es un comentario de una sola línea
 edad = 30  # puedo ponerlo al final de una línea de código
