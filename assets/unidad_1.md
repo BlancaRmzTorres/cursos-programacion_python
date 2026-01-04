@@ -15,7 +15,8 @@ Comparado con lenguajes más verbosos como C++, donde requeriría una clase comp
 int main() { // Función principal
     std::cout << "¡Hola, mundo!" << std::endl; // Imprime el mensaje
     return 0; // Indica que el programa terminó correctamente
-}```
+}
+```
 
 ## Aplicaciones reales incluyen:
 - Desarrollo web: Sitios como Instagram, Pinterest y Spotify usan Python en su backend.
