@@ -89,3 +89,225 @@ La indentación estricta puede frustrar a programadores de otros lenguajes, y er
 
 Otras características relacionadas: Soporte para comprehensions, decorators (@), generators (yield) y async/await para programación asíncrona, todo con sintaxis limpia.
 
+# 1.2. Dentro de Python (gramática, sintaxis, librerías)
+
+A continuación, desarrollo de forma extensa y detallada cada uno de los puntos solicitados, incluyendo explicaciones claras, ejemplos prácticos ejecutables y buenas prácticas. Todo el contenido está estructurado en Markdown para facilitar su lectura y uso en presentaciones o documentación.
+
+## Gramática básica
+La gramática de Python define las reglas fundamentales para escribir código válido. Dos elementos clave son los identificadores y las palabras reservadas.
+Identificadores
+
+Los identificadores son los nombres que asignamos a variables, funciones, clases, módulos, etc. Python tiene reglas estrictas para su formación:
+
+Reglas:
+- Pueden contener letras (a-z, A-Z), dígitos (0-9) y guiones bajos (_).
+- Deben comenzar con una letra o guion bajo (nunca con un dígito).
+- Son sensibles a mayúsculas y minúsculas (miVariable ≠ mivariable).
+- No pueden ser palabras reservadas (ver siguiente sección).
+
+Convención PEP 8:
+Es la guía oficial de estilo para escribir código Python, creada para mejorar la legibilidad y consistencia, estandarizando formato, nomenclatura y estructura, e incluye reglas sobre indentación (4 espacios), longitud de línea (máx. 79 caracteres), uso de espacios en blanco, nombres (minúsculas con guiones bajos) y organización de imports, ayudando a que el código sea más fácil de leer y mantener por otros desarrolladores. 
+
+Recomendaciones:
+- Variables y funciones: snake_case (todo minúsculas, palabras separadas por _).
+- Clases: CamelCase (primera letra mayúscula en cada palabra).
+- Constantes: MAYUSCULAS_CON_GUIONES.
+
+### Ejemplos válidos:
+
+```python
+nombre = "Ana"
+edad = 25
+_nombre_interno = 10
+mi_variable_1 = "texto"
+PrecioProducto = 99.99  # aunque es válido, no sigue PEP 8 (mejor snake_case)
+```
+
+Ejemplos inválidos:
+
+```python
+1variable = 5        # comienza con número → SyntaxError
+mi-variable = 10     # guion medio no permitido → SyntaxError
+class = "clase"      # palabra reservada → SyntaxError
+```
+
+### Buenas prácticas:
+- Usa nombres descriptivos: calcular_impuesto en vez de ci.
+- Evita nombres demasiado largos, pero prioriza claridad.
+- Documetar el uso de las funciones, clases, entre otras.
+  
+## Palabras reservadas
+Son palabras que Python reserva para su propio uso (sentencias, operadores, etc.). No pueden usarse como identificadores.
+
+Puedes ver la lista completa ejecutando:
+Python
+import keyword
+print(keyword.kwlist)
+Lista completa de palabras reservadas en Python 3.12 (actual al 2026):
+Python
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await',
+ 'break', 'class', 'continue', 'def', 'del', 'elif', 'else',
+ 'except', 'finally', 'for', 'from', 'global', 'if', 'import',
+ 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise',
+ 'return', 'try', 'while', 'with', 'yield']
+•	Ejemplos de uso correcto:
+Python
+if edad >= 18:
+    print("Mayor de edad")
+else:
+    print("Menor de edad")
+
+for i in range(5):
+    print(i)
+
+def saludar(nombre):
+    return f"Hola, {nombre}"
+•	Ejemplo de error:
+Python
+def = 5        # SyntaxError: invalid syntax
+class = "A"    # SyntaxError
+Sintaxis
+La sintaxis de Python es uno de sus mayores diferenciadores: limpia, legible y basada en indentación.
+Uso de indentación
+Python usa la indentación (espacios o tabuladores) para delimitar bloques de código, en lugar de llaves {} como en otros lenguajes.
+•	Regla estricta:
+o	Generalmente se usan 4 espacios por nivel (recomendado por PEP 8).
+o	Todo el bloque debe tener la misma indentación.
+o	Mezclar tabuladores y espacios causa TabError.
+•	Ejemplo correcto:
+Python
+def calcular_area_rectangulo(base, altura):
+    if base > 0 and altura > 0:
+        area = base * altura
+        print(f"El área es: {area}")
+        return area
+    else:
+        print("Base y altura deben ser positivas")
+        return 0
+•	Ejemplo incorrecto:
+Python
+def ejemplo_malo():
+if True:  # sin indentación → IndentationError
+print("Esto falla")
+•	Ventajas:
+o	Obliga a escribir código limpio y consistente.
+o	Mejora la legibilidad para equipos.
+•	Consejo: Configura tu editor (VS Code, PyCharm, etc.) para convertir tabuladores en 4 espacios automáticamente.
+Comentarios
+Los comentarios sirven para documentar el código y no se ejecutan.
+•	Comentarios de una línea: con #
+Python
+# Esto es un comentario de una sola línea
+edad = 30  # puedo ponerlo al final de una línea de código
+•	Comentarios multilínea: con triple comilla """ (docstrings) o múltiples #
+Python
+"""
+Esto es un comentario multilínea.
+Se usa frecuentemente como docstring para documentar funciones,
+clases o módulos.
+"""
+
+# Línea 1 del comentario
+# Línea 2 del comentario
+# Línea 3 del comentario
+•	Docstrings (recomendados):
+Python
+def suma(a, b):
+    """
+    Retorna la suma de dos números.
+    
+    Parámetros:
+        a (int o float): primer número
+        b (int o float): segundo número
+    
+    Retorna:
+        int o float: suma de a y b
+    """
+    return a + b
+Las herramientas como Sphinx o ayuda interactiva (help(suma)) usan estos docstrings.
+Bloques de código
+Un bloque de código es un grupo de sentencias que se ejecutan juntas (dentro de una función, bucle, condicional, etc.).
+•	Estructura típica:
+Python
+# Ejemplo completo con varios bloques
+def procesar_lista(numeros):
+    """
+    Imprime números pares de una lista.
+    """
+    for numero in numeros:          # inicio del bloque for
+        if numero % 2 == 0:         # inicio del bloque if
+            print(f"{numero} es par")
+        else:                       # bloque else (mismo nivel que if)
+            print(f"{numero} es impar")
+    # fin del bloque for (vuelve al nivel de la función)
+    
+    print("Procesamiento terminado")
+•	Bloques anidados:
+Python
+for i in range(3):
+    for j in range(2):
+        print(f"i={i}, j={j}")
+    print("Fin de j para este i")
+La indentación define claramente la jerarquía de los bloques.
+Librerías
+Una de las mayores fortalezas de Python es su ecosistema de librerías.
+Librerías estándar
+Python incluye una biblioteca estándar muy completa que viene instalada por defecto. No necesitas instalar nada extra.
+Algunos módulos más útiles:
+Módulo	Descripción	Ejemplo de uso
+math	Funciones matemáticas	import math; math.sqrt(16) → 4.0
+random	Generación de números aleatorios	import random; random.randint(1, 10)
+datetime	Manejo de fechas y horas	from datetime import datetime; datetime.now()
+os	Interacción con el sistema operativo	import os; os.getcwd() → directorio actual
+sys	Acceso a parámetros y funciones del intérprete	import sys; sys.version
+json	Trabajar con JSON	import json; json.loads('{"nombre": "Ana"}')
+collections	Estructuras de datos avanzadas	from collections import Counter; Counter([1,1,2])
+itertools	Herramientas para iteradores	import itertools; list(itertools.combinations([1,2,3], 2))
+Ejemplo práctico combinando varios:
+Python
+import os
+import datetime
+import random
+
+print("Directorio actual:", os.getcwd())
+print("Fecha y hora:", datetime.datetime.now())
+
+numero_aleatorio = random.randint(1, 100)
+print(f"Número aleatorio del día: {numero_aleatorio}")
+Librerías externas (pip)
+Las librerías externas se instalan con el gestor de paquetes pip y provienen del Python Package Index (PyPI).
+•	Instalación básica:
+Bash
+pip install nombre_paquete
+pip install requests pandas numpy matplotlib
+•	Ejemplos de librerías externas muy populares:
+Librería	Uso principal	Ejemplo de instalación e importación
+requests	Peticiones HTTP sencillas	pip install requests import requests; r = requests.get('https://api.github.com')
+pandas	Análisis y manipulación de datos	pip install pandas import pandas as pd; df = pd.read_csv('datos.csv')
+numpy	Cálculo numérico de alto rendimiento	pip install numpy import numpy as np; arr = np.array([1,2,3])
+matplotlib	Visualización de datos (gráficos)	pip install matplotlib import matplotlib.pyplot as plt; plt.plot([1,2,3])
+flask	Desarrollo web ligero	pip install flask
+django	Desarrollo web completo	pip install django
+beautifulsoup4	Web scraping	pip install beautifulsoup4 from bs4 import BeautifulSoup
+Ejemplo real con requests y json:
+Python
+import requests
+
+respuesta = requests.get("https://api.chucknorris.io/jokes/random")
+if respuesta.status_code == 200:
+    broma = respuesta.json()["value"]
+    print("Broma de Chuck Norris:", broma)
+Gestión avanzada:
+•	Entornos virtuales (recomendado):
+Bash
+python -m venv mi_entorno
+source mi_entorno/bin/activate    # Linux/macOS
+mi_entorno\Scripts\activate       # Windows
+pip install paquete
+•	Archivo requirements.txt para compartir proyectos:
+Bash
+pip freeze > requirements.txt
+pip install -r requirements.txt
+Con esto concluimos la sección. Python destaca por su gramática simple, sintaxis legible y un ecosistema de librerías que lo convierten en una herramienta extremadamente potente y versátil.
+
+
