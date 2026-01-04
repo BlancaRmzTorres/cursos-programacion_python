@@ -1,7 +1,14 @@
 ## ¿Qué es Python?
 Python es un lenguaje de programación de alto nivel, versátil y de propósito general, diseñado para ser fácil de leer, escribir y mantener. Fue creado con el objetivo de priorizar la legibilidad del código, lo que lo hace ideal tanto para principiantes como para desarrolladores experimentados. Python se utiliza en una amplia gama de aplicaciones, desde el desarrollo web y la automatización de tareas hasta la inteligencia artificial, el análisis de datos, la programación científica y el desarrollo de juegos.
 
-En el ámbito educativo, Python es ampliamente utilizado en universidades y cursos en línea (como Coursera, edX o freeCodeCamp) porque su sintaxis es similar al inglés, lo que reduce la curva de aprendizaje. Por ejemplo, un simple "Hola Mundo" en Python es solo print("Hola Mundo"), comparado con lenguajes más verbosos como Java, donde requeriría una clase completa.
+En el ámbito educativo, Python es ampliamente utilizado en universidades y cursos en línea (como Coursera, edX o freeCodeCamp) porque su sintaxis es similar al inglés, lo que reduce la curva de aprendizaje. 
+
+Por ejemplo, un simple "Hola Mundo" en Python es solo 
+
+```python
+    print("Hola Mundo")
+```
+Comparado con lenguajes más verbosos como Java, donde requeriría una clase completa.
 
 ## Aplicaciones reales incluyen:
 - Desarrollo web: Sitios como Instagram, Pinterest y Spotify usan Python en su backend.
