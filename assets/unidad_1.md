@@ -76,7 +76,7 @@ Un if-else es
 if condicion: 
     print("Verdadero") 
 else: 
-    print("Falso"). 
+    print("Falso") 
 ```
 
 ## Ventajas: 
