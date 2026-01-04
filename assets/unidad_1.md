@@ -347,4 +347,89 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 Con esto concluimos la sección. Python destaca por su gramática simple, sintaxis legible y un ecosistema de librerías que lo convierten en una herramienta extremadamente potente y versátil.
 
+## 1.3 Proceso de ejecución en Python
+El proceso de ejecución de un programa en Python es diferente al de lenguajes compilados como C o Java. Python es un lenguaje interpretado (aunque con un paso intermedio de compilación a bytecode), lo que significa que el código no se traduce completamente a lenguaje máquina antes de ejecutarse, sino que se interpreta en tiempo de ejecución.
 
+A continuación se detalla el proceso completo de manera más precisa y ampliada, con ejemplos:
+
+Pasos detallados del proceso de ejecución
+
+## 1. Escritura del código fuente
+El programador escribe el código en un archivo con extensión .py (por ejemplo, mi_programa.py). Este archivo contiene texto plano con instrucciones en Python.Ejemplo:
+
+```python
+# mi_programa.py
+nombre = "Ana"
+edad = 25
+print(f"Hola, me llamo {nombre} y tengo {edad} años.")
+```
+## 2. Lectura y análisis léxico/sintáctico (parsing)
+Cuando se ejecuta el programa con python mi_programa.py, el intérprete de Python:
+- Lee el código fuente completo.
+- Lo divide en tokens (análisis léxico).
+- Construye un árbol de sintaxis abstracta (AST) verificando que la sintaxis sea correcta.
+
+Si hay errores de sintaxis (SyntaxError), el programa falla en esta etapa.
+
+Ejemplo de error en esta fase:
+
+```python
+print("Hola"  # Falta cerrar el paréntesis
+```
+Resultado: SyntaxError: unexpected EOF while parsing
+
+## 3. Compilación a bytecode
+Python compila el AST a un código intermedio llamado bytecode (código de bytes). Este bytecode es independiente de la plataforma y se almacena internamente en objetos code.
+
+Si el archivo .pyc correspondiente (en la carpeta __pycache__) está actualizado, Python reutiliza el bytecode ya compilado para ahorrar tiempo.
+
+El bytecode es lo que realmente ejecuta la máquina virtual de Python (Python Virtual Machine o PVM).
+
+Puedes ver el bytecode generado con el módulo dis:
+
+```python
+import dis
+
+def saludar():
+    print("Hola mundo")
+
+dis.dis(saludar)
+```
+
+## 4. Ejecución en la Máquina Virtual de Python (PVM)
+
+La PVM interpreta y ejecuta el bytecode instrucción por instrucción (opcode por opcode).
+- Carga constantes y variables.
+- Realiza operaciones.
+- Gestiona la pila de ejecución, el scope, llamadas a funciones, etc.
+
+Durante esta fase pueden aparecer errores en tiempo de ejecución (RuntimeError, NameError, TypeError, etc.).Ejemplo de error en tiempo de ejecución:
+
+```python
+numero = "10"
+resultado = numero + 5  # TypeError
+```
+
+## 5. Finalización
+Una vez ejecutadas todas las instrucciones, el programa termina y devuelve el control al sistema operativo.
+
+Código fuente (.py)
+       ↓
+Análisis léxico y sintáctico → Árbol AST
+       ↓ (si hay errores → SyntaxError)
+Compilación → Bytecode (.pyc cacheado)
+       ↓
+Ejecución en PVM instrucción por instrucción
+       ↓ (posibles excepciones en runtime)
+Salida / Resultado del programa
+
+### Diferencias clave con lenguajes compilados
+
+| Aspecto                  | Python (interpretado con bytecode)                  | Lenguajes compilados (C, Go)                  |
+|--------------------------|-----------------------------------------------------|-----------------------------------------------|
+| Compilación              | A bytecode (intermedio)                             | Directo a código máquina                      |
+| Velocidad de inicio      | Más rápido (no hay enlace)                          | Más lento (compilación completa)              |
+| Portabilidad             | Alta (bytecode corre en cualquier PVM)              | Baja (binario específico de plataforma)       |
+| Detección de errores     | Muchos en tiempo de ejecución                       | La mayoría en tiempo de compilación           |
+
+Este proceso híbrido (interpretado con compilación intermedia) permite a Python combinar flexibilidad, portabilidad y una buena velocidad de desarrollo.
