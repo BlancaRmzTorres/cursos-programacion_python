@@ -71,10 +71,13 @@ La sintaxis de Python es diseñada para ser legible y similar al pseudocódigo o
 
 ## Ejemplo: 
 Un if-else es 
+
+```python
 if condicion: 
     print("Verdadero") 
 else: 
     print("Falso"). 
+```
 
 ## Ventajas: 
 Facilita la colaboración (código se lee como prosa), reduce bugs visuales y acelera el aprendizaje. El PEP 8 (Python Enhancement Proposal) define guías de estilo para consistencia.
