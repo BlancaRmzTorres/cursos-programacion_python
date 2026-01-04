@@ -46,5 +46,7 @@ _______________
 > Waskom, M. L. (2021). Seaborn: Statistical data visualization. *Journal of Open Source Software, 6*(60), 3021. [https://doi.org/10.21105/joss.03021](https://doi.org/10.21105/joss.03021)
 
 > Wes McKinney et al. (2010). Data structures for statistical computing in Python. *Proceedings of the 9th Python in Science Conference*, 56–61.
+
 > Zhang, A., Lipton, Z. C., Li, M., & Smola, A. J. (2023). *Dive into deep learning*. Cambridge University Press. [https://d2l.ai](https://d2l.ai)
+
 > Zelle, J. M. (2017). *Python programming: An introduction to computer science* (3rd ed.). Franklin, Beedle & Associates.
