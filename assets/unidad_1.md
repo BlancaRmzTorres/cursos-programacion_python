@@ -487,3 +487,73 @@ Esta posición se debe a su **versatilidad**, **simplicidad** y a un ecosistema 
 ### Conclusión
 
 La combinación de simplicidad, potencia y un ecosistema maduro hace que Python no solo sea un lenguaje excelente para aprender a programar, sino también una herramienta estratégica en entornos profesionales y científicos. Su alcance sigue creciendo, especialmente con el auge de la inteligencia artificial y la ciencia de datos, consolidándolo como uno de los lenguajes más importantes del presente y del futuro cercano.
+
+
+# 1.5 Implementación del entorno de desarrollo (instalación, configuración, IDEs)
+
+Para comenzar a programar en Python, es esencial configurar un entorno de desarrollo adecuado. Esto incluye la instalación de Python, la gestión de paquetes y entornos virtuales, y la elección de un editor o IDE (Integrated Development Environment).
+
+A enero de 2026, la versión estable más reciente de Python es **Python 3.14** (la serie 3.15 está en fase pre-release alpha). Siempre se recomienda instalar la última versión estable desde el sitio oficial.
+
+### Instalación de Python
+
+La forma recomendada es descargar el instalador oficial desde [https://www.python.org/downloads/](https://www.python.org/downloads/). El sitio detecta automáticamente tu sistema operativo y ofrece la versión adecuada.
+
+#### En Windows
+1. Descarga el instalador ejecutable (.exe) para Windows.
+2. Ejecútalo como administrador.
+3. **Importante**: Marca la casilla **"Add python.exe to PATH"** (agregar Python al PATH del sistema).
+4. Selecciona "Install Now" para una instalación estándar.
+5. Al finalizar, verifica abriendo la Command Prompt (cmd) y ejecutando:
+
+
+#### En macOS
+1. Descarga el instalador (.pkg) para macOS.
+2. Ejecútalo y sigue las instrucciones del asistente.
+3. Python se instalará en `/Applications/Python 3.x`.
+4. Verifica en Terminal:
+
+Nota: En macOS recientes, se usa `python3` para evitar conflictos con la versión antigua de Python 2 que venía preinstalada.
+
+Alternativa recomendada: Usa **Homebrew** (gestor de paquetes):
+
+
+#### En Linux (Ubuntu/Debian, Fedora, etc.)
+La mayoría de distribuciones incluyen Python preinstalado, pero para la versión más reciente:
+- **Ubuntu/Debian**:
+
+
+2. **Entornos virtuales** (recomendado para aislar proyectos):
+Crea un entorno:
+
+Actívalo:
+- Windows: `mi_entorno\Scripts\activate`
+- macOS/Linux: `source mi_entorno/bin/activate`
+Desactívalo: `deactivate`
+
+3. **Variables de entorno**: En Windows, asegúrate de que Python esté en PATH (lo hace el instalador si marcaste la opción).
+
+### IDEs y editores recomendados (2026)
+
+| IDE/Editor                  | Descripción                                                                 | Ideal para                          | Gratuito/Pago          |
+|-----------------------------|-----------------------------------------------------------------------------|-------------------------------------|------------------------|
+| **Visual Studio Code (VS Code)** | Editor ligero y extensible. Con extensión oficial de Python (Microsoft), ofrece autocompletado, debugging, linting y soporte para Jupyter. El más popular en 2026. | Todo tipo de proyectos, principiantes y expertos | Gratuito (open source) |
+| **PyCharm**                | IDE completo de JetBrains. Edición Community (gratuita) y Professional (paga con más features como web y ciencia de datos). Excelente refactoring y debugging. | Proyectos grandes, desarrollo profesional | Community: Gratuito<br>Professional: Pago |
+| **Cursor**                 | Editor basado en VS Code pero con integración profunda de IA (code completion avanzada). Muy popular en 2026 para desarrollo asistido por IA. | Desarrolladores que usan IA para codificar más rápido | Gratuito con opciones premium |
+| **JupyterLab / Notebook**  | Entorno interactivo basado en navegador, ideal para notebooks (.ipynb). Perfecto para experimentación. | Ciencia de datos, ML, análisis exploratorio | Gratuito |
+| **Spyder**                 | IDE científico incluido en Anaconda. Interfaz similar a MATLAB/RStudio, con explorador de variables y gráficos integrados. | Ciencia de datos y computación científica | Gratuito |
+| **Thonny**                 | IDE simple y amigable, con debugger paso a paso visual. Viene con Python incluido. | Principiantes y educación | Gratuito |
+| **IDLE**                   | IDE básico incluido con Python. Suficiente para scripts simples. | Primeros pasos, pruebas rápidas | Gratuito (incluido) |
+
+**Recomendación general**:
+- Principiantes: Thonny o VS Code.
+- Desarrollo general: VS Code o PyCharm Community.
+- Ciencia de datos/IA: JupyterLab, Spyder o PyCharm Professional.
+- Con IA avanzada: Cursor.
+
+### Otras herramientas útiles
+- **Anaconda/Miniconda**: Distribución para ciencia de datos (incluye conda, Jupyter, Spyder y cientos de paquetes preinstalados).
+- **poetry** o **uv**: Gestores modernos de dependencias y entornos (alternativas a pip + venv).
+
+Con estos pasos, tendrás un entorno de desarrollo Python listo y profesional. ¡Ahora puedes empezar a escribir tu primer "Hello World"!
+
