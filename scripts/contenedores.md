@@ -178,24 +178,3 @@ docker logs jupyter_datascience
 ```
 http://localhost:8888
 ```
-
----
-
-## 4. Buenas prácticas (alineadas a laboratorios institucionales como INEGI)
-
-* ✔️ Usar volúmenes para **reproducibilidad y trazabilidad**
-* ✔️ Evitar imágenes personalizadas sin control de versiones
-* ✔️ Controlar accesos (tokens, passwords, reverse proxy)
-* ✔️ Versionar `docker-compose.yml` en Git
-* ✔️ Ideal para entornos **éticos, reproducibles y auditables** en Ciencia de Datos
-
----
-
-Si deseas, en el siguiente paso puedo:
-
-* 🔐 Agregar **autenticación con password**
-* 📊 Integrar **Spark o PostgreSQL**
-* 🧪 Crear una versión alineada a **Data Science + IA Responsable**
-* 🏛️ Adaptarlo a un **Laboratorio de Ciencia de Datos institucional**
-
-Solo dime cómo lo quieres extender.
