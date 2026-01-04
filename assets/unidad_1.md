@@ -1,3 +1,5 @@
+# 1.1. Presentación de Python
+
 ## ¿Qué es Python?
 Python es un lenguaje de programación de alto nivel, versátil y de propósito general, diseñado para ser fácil de leer, escribir y mantener. Fue creado con el objetivo de priorizar la legibilidad del código, lo que lo hace ideal tanto para principiantes como para desarrolladores experimentados. Python se utiliza en una amplia gama de aplicaciones, desde el desarrollo web y la automatización de tareas hasta la inteligencia artificial, el análisis de datos, la programación científica y el desarrollo de juegos.
 
