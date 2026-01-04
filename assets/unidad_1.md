@@ -200,7 +200,7 @@ Ejemplo incorrecto:
 def ejemplo_malo():
 if True:  # sin indentación → IndentationError
 print("Esto falla")
-```python
+```
 
 Ventajas:
 - Obliga a escribir código limpio y consistente.
@@ -211,11 +211,13 @@ Consejo: Configura tu editor (VS Code, PyCharm, etc.) para convertir tabuladores
 Comentarios
 Los comentarios sirven para documentar el código y no se ejecutan.
 - Comentarios de una línea: con #
-Python
+
 # Esto es un comentario de una sola línea
+
+```python
 edad = 30  # puedo ponerlo al final de una línea de código
 •	Comentarios multilínea: con triple comilla """ (docstrings) o múltiples #
-Python
+
 """
 Esto es un comentario multilínea.
 Se usa frecuentemente como docstring para documentar funciones,
@@ -239,11 +241,14 @@ def suma(a, b):
         int o float: suma de a y b
     """
     return a + b
-Las herramientas como Sphinx o ayuda interactiva (help(suma)) usan estos docstrings.
-Bloques de código
+```
+
+## Bloques de código
 Un bloque de código es un grupo de sentencias que se ejecutan juntas (dentro de una función, bucle, condicional, etc.).
-•	Estructura típica:
-Python
+
+## Estructura típica:
+
+```python
 # Ejemplo completo con varios bloques
 def procesar_lista(numeros):
     """
@@ -257,19 +262,25 @@ def procesar_lista(numeros):
     # fin del bloque for (vuelve al nivel de la función)
     
     print("Procesamiento terminado")
-•	Bloques anidados:
-Python
+# Bloques anidados:
+
 for i in range(3):
     for j in range(2):
         print(f"i={i}, j={j}")
     print("Fin de j para este i")
-La indentación define claramente la jerarquía de los bloques.
-Librerías
+```
+
+- La indentación define claramente la jerarquía de los bloques.
+
+## Librerías
 Una de las mayores fortalezas de Python es su ecosistema de librerías.
-Librerías estándar
+
+## Librerías estándar
 Python incluye una biblioteca estándar muy completa que viene instalada por defecto. No necesitas instalar nada extra.
 Algunos módulos más útiles:
-Módulo	Descripción	Ejemplo de uso
+Módulo	Descripción	
+
+Ejemplo de uso
 math	Funciones matemáticas	import math; math.sqrt(16) → 4.0
 random	Generación de números aleatorios	import random; random.randint(1, 10)
 datetime	Manejo de fechas y horas	from datetime import datetime; datetime.now()
@@ -278,8 +289,10 @@ sys	Acceso a parámetros y funciones del intérprete	import sys; sys.version
 json	Trabajar con JSON	import json; json.loads('{"nombre": "Ana"}')
 collections	Estructuras de datos avanzadas	from collections import Counter; Counter([1,1,2])
 itertools	Herramientas para iteradores	import itertools; list(itertools.combinations([1,2,3], 2))
-Ejemplo práctico combinando varios:
-Python
+
+```python
+##Ejemplo práctico combinando varios:
+
 import os
 import datetime
 import random
@@ -289,13 +302,17 @@ print("Fecha y hora:", datetime.datetime.now())
 
 numero_aleatorio = random.randint(1, 100)
 print(f"Número aleatorio del día: {numero_aleatorio}")
+```
+
 Librerías externas (pip)
 Las librerías externas se instalan con el gestor de paquetes pip y provienen del Python Package Index (PyPI).
-•	Instalación básica:
-Bash
+
+## Instalación básica:
+
 pip install nombre_paquete
 pip install requests pandas numpy matplotlib
-•	Ejemplos de librerías externas muy populares:
+
+Ejemplos de librerías externas muy populares:
 Librería	Uso principal	Ejemplo de instalación e importación
 requests	Peticiones HTTP sencillas	pip install requests import requests; r = requests.get('https://api.github.com')
 pandas	Análisis y manipulación de datos	pip install pandas import pandas as pd; df = pd.read_csv('datos.csv')
@@ -304,14 +321,19 @@ matplotlib	Visualización de datos (gráficos)	pip install matplotlib import mat
 flask	Desarrollo web ligero	pip install flask
 django	Desarrollo web completo	pip install django
 beautifulsoup4	Web scraping	pip install beautifulsoup4 from bs4 import BeautifulSoup
+
+
 Ejemplo real con requests y json:
-Python
+
+```python
 import requests
 
 respuesta = requests.get("https://api.chucknorris.io/jokes/random")
 if respuesta.status_code == 200:
     broma = respuesta.json()["value"]
     print("Broma de Chuck Norris:", broma)
+```
+
 Gestión avanzada:
 •	Entornos virtuales (recomendado):
 Bash
