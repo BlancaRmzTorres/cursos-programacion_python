@@ -1,3 +1,4 @@
+<p align="justify">
 # 1.1. Presentación de Python
 
 ## ¿Qué es Python?
@@ -554,6 +555,8 @@ Desactívalo: `deactivate`
 ### Otras herramientas útiles
 - **Anaconda/Miniconda**: Distribución para ciencia de datos (incluye conda, Jupyter, Spyder y cientos de paquetes preinstalados).
 - **poetry** o **uv**: Gestores modernos de dependencias y entornos (alternativas a pip + venv).
+
+</p>
 
 Con estos pasos, tendrás un entorno de desarrollo Python listo y profesional. ¡Ahora puedes empezar a escribir tu primer "Hello World"!
 
