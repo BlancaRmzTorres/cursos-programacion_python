@@ -528,15 +528,16 @@ La mayoría de distribuciones incluyen Python preinstalado, pero para la versió
 - **Ubuntu/Debian**:
 
 
-2. **Entornos virtuales** (recomendado para aislar proyectos):
+2. **Entornos virtuales**
+Los entornos virtuales de Python son directorios aislados que permiten gestionar dependencias y librerías específicas para cada proyecto, evitando conflictos entre versiones y asegurando la portabilidad
 
-Crea un entorno:
+Para crear un entorno virtual se realiza lo siguiente:
 
 Actívalo:
 
 - Windows: `mi_entorno\Scripts\activate`
 - macOS/Linux: `source mi_entorno/bin/activate`
-- 
+
 Desactívalo: `deactivate`
 
 3. **Variables de entorno**: En Windows, asegúrate de que Python esté en PATH (lo hace el instalador si marcaste la opción).
