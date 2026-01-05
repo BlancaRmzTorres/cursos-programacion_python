@@ -54,6 +54,7 @@ Utiliza la librería `math` para:
 
 ```python
 import math
+```
 
 ## Ejercicio 6: Estructura condicional
 
