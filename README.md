@@ -2,7 +2,7 @@
 
 assets/unidad_1.md
 
-### 1. [INTRODUCCIÓN A PYTHON Y ENTORNO DE DESARROLLO](assets/unidad_1.md)
+#### 1. [INTRODUCCIÓN A PYTHON Y ENTORNO DE DESARROLLO](assets/unidad_1.md)
 - 1.1.Presentación de Python.
 - 1.2.Dentro de Python (gramática, sintaxis, librerías).
 - 1.3.Proceso de ejecución en Python.
@@ -11,7 +11,7 @@ assets/unidad_1.md
 
 _______________
 
-### Referencias bibliográficas (APA)
+#### Referencias bibliográficas (APA)
 
 > Aggarwal, C. C. (2018). *Neural networks and deep learning: A textbook*. Springer. [https://doi.org/10.1007/978-3-319-94463-0](https://doi.org/10.1007/978-3-319-94463-0)
 
