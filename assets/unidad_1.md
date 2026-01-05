@@ -53,6 +53,7 @@ Python es un lenguaje interpretado, lo que significa que el código fuente se tr
 
 El proceso involucra: 
   (1) El código fuente (.py) se compila a bytecode (.pyc) por el intérprete; 
+  
   (2) Este bytecode se ejecuta en la Máquina Virtual de Python (PVM). Ventajas incluyen desarrollo rápido (puedes probar código inmediatamente sin compilación larga), portabilidad (el bytecode es independiente de la plataforma) y facilidad de depuración (errores se detectan en runtime).
   
 ## Multiplataforma
