@@ -91,8 +91,6 @@ Otras características relacionadas: Soporte para comprehensions, decorators (@)
 
 # 1.2. Dentro de Python (gramática, sintaxis, librerías)
 
-A continuación, desarrollo de forma extensa y detallada cada uno de los puntos solicitados, incluyendo explicaciones claras, ejemplos prácticos ejecutables y buenas prácticas. Todo el contenido está estructurado en Markdown para facilitar su lectura y uso en presentaciones o documentación.
-
 ## Gramática básica
 La gramática de Python define las reglas fundamentales para escribir código válido. Dos elementos clave son los identificadores y las palabras reservadas.
 Identificadores
