@@ -314,15 +314,18 @@ Las librerías externas se instalan con el gestor de paquetes pip y provienen de
 pip install nombre_paquete
 pip install requests pandas numpy matplotlib
 
-Ejemplos de librerías externas muy populares:
-Librería	Uso principal	Ejemplo de instalación e importación
-requests	Peticiones HTTP sencillas	pip install requests import requests; r = requests.get('https://api.github.com')
-pandas	Análisis y manipulación de datos	pip install pandas import pandas as pd; df = pd.read_csv('datos.csv')
-numpy	Cálculo numérico de alto rendimiento	pip install numpy import numpy as np; arr = np.array([1,2,3])
-matplotlib	Visualización de datos (gráficos)	pip install matplotlib import matplotlib.pyplot as plt; plt.plot([1,2,3])
-flask	Desarrollo web ligero	pip install flask
-django	Desarrollo web completo	pip install django
-beautifulsoup4	Web scraping	pip install beautifulsoup4 from bs4 import BeautifulSoup
+### Ejemplos de librerías externas muy populares
+
+| Librería | Uso principal | Instalación | Ejemplo de importación / uso |
+|--------|---------------|-------------|-------------------------------|
+| `requests` | Peticiones HTTP sencillas | `pip install requests` | `import requests; r = requests.get('https://api.github.com')` |
+| `pandas` | Análisis y manipulación de datos | `pip install pandas` | `import pandas as pd; df = pd.read_csv('datos.csv')` |
+| `numpy` | Cálculo numérico de alto rendimiento | `pip install numpy` | `import numpy as np; arr = np.array([1, 2, 3])` |
+| `matplotlib` | Visualización de datos (gráficos) | `pip install matplotlib` | `import matplotlib.pyplot as plt; plt.plot([1, 2, 3])` |
+| `flask` | Desarrollo web ligero | `pip install flask` | `from flask import Flask` |
+| `django` | Desarrollo web completo | `pip install django` | `import django` |
+| `beautifulsoup4` | Web scraping (análisis de HTML/XML) | `pip install beautifulsoup4` | `from bs4 import BeautifulSoup` |
+
 
 
 Ejemplo real con requests y json:
