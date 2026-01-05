@@ -1,6 +1,4 @@
-## Indice Temático 
-
-assets/unidad_1.md
+## Indice Temático
 
 #### 1. [INTRODUCCIÓN A PYTHON Y ENTORNO DE DESARROLLO](assets/unidad_1.md)
 - 1.1.Presentación de Python.
