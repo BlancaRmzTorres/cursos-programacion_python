@@ -52,9 +52,8 @@ Python se distingue por una serie de características que lo hacen único y atra
 Python es un lenguaje interpretado, lo que significa que el código fuente se traduce y ejecuta línea por línea por un intérprete (como CPython, el implementado en C), en lugar de compilarse a un ejecutable independiente. Esto contrasta con lenguajes compilados como C++, donde el código se convierte en binario antes de ejecutarse.
 
 El proceso involucra: 
-  (1) El código fuente (.py) se compila a bytecode (.pyc) por el intérprete; 
-  
-  (2) Este bytecode se ejecuta en la Máquina Virtual de Python (PVM). Ventajas incluyen desarrollo rápido (puedes probar código inmediatamente sin compilación larga), portabilidad (el bytecode es independiente de la plataforma) y facilidad de depuración (errores se detectan en runtime).
+  - (1) El código fuente (.py) se compila a bytecode (.pyc) por el intérprete;   
+  - (2) Este bytecode se ejecuta en la Máquina Virtual de Python (PVM). Ventajas incluyen desarrollo rápido (puedes probar código inmediatamente sin compilación larga), portabilidad (el bytecode es independiente de la plataforma) y facilidad de depuración (errores se detectan en runtime).
   
 ## Multiplataforma
 Python es multiplataforma, lo que significa que el mismo código puede ejecutarse en diferentes sistemas operativos (Windows, macOS, Linux, Unix, incluso Android o iOS con herramientas como Kivy) sin modificaciones significativas. Esto se logra porque el intérprete maneja las diferencias subyacentes del SO, y las bibliotecas estándar abstraen operaciones como manejo de archivos o redes.
