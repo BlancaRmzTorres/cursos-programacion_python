@@ -13,7 +13,7 @@ _______________
 
 #### Referencias bibliográficas (APA)
 
-> Aggarwal, C. C. (2018). *Neural networks and deep learning: A textbook*. Springer. [https://doi.org/10.1007/978-3-319-94463-0](https://doi.org/10.1007/978-3-319-94463-0)
+> Aggarwal, C. C. (2018). *Neural networks and deep learning: A textbook*. Springer.
 
 > Albon, C. (2018). *Machine learning with Python cookbook: Practical solutions from preprocessing to deep learning*. O’Reilly Media.
 
@@ -21,17 +21,17 @@ _______________
 
 > Géron, A. (2022). *Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow* (3rd ed.). O’Reilly Media.
 
-> Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep learning*. MIT Press. [https://www.deeplearningbook.org](https://www.deeplearningbook.org)
+> Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep learning*. MIT Press. 
 
 > Grus, J. (2019). *Data science from scratch: First principles with Python* (2nd ed.). O’Reilly Media.
 
-> Hastie, T., Tibshirani, R., & Friedman, J. (2017). *The elements of statistical learning: Data mining, inference, and prediction* (2nd ed.). Springer. [https://doi.org/10.1007/978-0-387-84858-
+> Hastie, T., Tibshirani, R., & Friedman, J. (2017). *The elements of statistical learning: Data mining, inference, and prediction* (2nd ed.). Springer.
 
 > Jake VanderPlas. (2016). *Python data science handbook: Essential tools for working with data*. O’Reilly Media.
 
 > McKinney, W. (2022). *Python for data analysis: Data wrangling with pandas, NumPy, and Jupyter* (3rd ed.). O’Reilly Media.
 
-> Molnar, C. (2022). *Interpretable machine learning* (2nd ed.). [https://christophm.github.io/interpretable-ml-book/](https://christophm.github.io/interpretable-ml-book/)
+> Molnar, C. (2022). *Interpretable machine learning* (2nd ed.). 
 
 > Murphy, K. P. (2022). *Probabilistic machine learning: An introduction*. MIT Press.
 
@@ -41,14 +41,14 @@ _______________
 
 > Russell, S., & Norvig, P. (2021). *Artificial intelligence: A modern approach* (4th ed.). Pearson.
 
-> VanderPlas, J., Connolly, A. J., Ivezić, Ž., & Gray, A. (2012). Introduction to astroML: Machine learning for astrophysics. *Proceedings of the Conference on Intelligent Data Understanding*, 47–54. [https://doi.org/10.1109/CIDU.2012.6382200](https://doi.org/10.1109/CIDU.2012.6382200)
+> VanderPlas, J., Connolly, A. J., Ivezić, Ž., & Gray, A. (2012). Introduction to astroML: Machine learning for astrophysics. *Proceedings of the Conference on Intelligent Data Understanding*, 47–54. 
 
 > Van Rossum, G., & Drake, F. L. (2009). *Python 3 reference manual*. CreateSpace.
 
-> Waskom, M. L. (2021). Seaborn: Statistical data visualization. *Journal of Open Source Software, 6*(60), 3021. [https://doi.org/10.21105/joss.03021](https://doi.org/10.21105/joss.03021)
+> Waskom, M. L. (2021). Seaborn: Statistical data visualization. *Journal of Open Source Software, 6*(60), 3021. 
 
 > Wes McKinney et al. (2010). Data structures for statistical computing in Python. *Proceedings of the 9th Python in Science Conference*, 56–61.
 
-> Zhang, A., Lipton, Z. C., Li, M., & Smola, A. J. (2023). *Dive into deep learning*. Cambridge University Press. [https://d2l.ai](https://d2l.ai)
+> Zhang, A., Lipton, Z. C., Li, M., & Smola, A. J. (2023). *Dive into deep learning*. Cambridge University Press.
 
 > Zelle, J. M. (2017). *Python programming: An introduction to computer science* (3rd ed.). Franklin, Beedle & Associates.
