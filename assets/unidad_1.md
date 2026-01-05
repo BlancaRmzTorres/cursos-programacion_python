@@ -405,6 +405,7 @@ resultado = numero + 5  # TypeError
 ## 5. Finalización
 Una vez ejecutadas todas las instrucciones, el programa termina y devuelve el control al sistema operativo.
 
+```md
 Código fuente (.py)
        ↓
 Análisis léxico y sintáctico → Árbol AST
@@ -414,6 +415,7 @@ Compilación → Bytecode (.pyc cacheado)
 Ejecución en PVM instrucción por instrucción
        ↓ (posibles excepciones en runtime)
 Salida / Resultado del programa
+```
 
 ### Diferencias clave con lenguajes compilados
 
