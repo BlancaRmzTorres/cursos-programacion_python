@@ -339,19 +339,6 @@ if respuesta.status_code == 200:
     print("Broma de Chuck Norris:", broma)
 ```
 
-Gestión avanzada:
-•	Entornos virtuales (recomendado):
-Bash
-python -m venv mi_entorno
-source mi_entorno/bin/activate    # Linux/macOS
-mi_entorno\Scripts\activate       # Windows
-pip install paquete
-•	Archivo requirements.txt para compartir proyectos:
-Bash
-pip freeze > requirements.txt
-pip install -r requirements.txt
-Con esto concluimos la sección. Python destaca por su gramática simple, sintaxis legible y un ecosistema de librerías que lo convierten en una herramienta extremadamente potente y versátil.
-
 ## 1.3 Proceso de ejecución en Python
 El proceso de ejecución de un programa en Python es diferente al de lenguajes compilados como C o Java. Python es un lenguaje interpretado (aunque con un paso intermedio de compilación a bytecode), lo que significa que el código no se traduce completamente a lenguaje máquina antes de ejecutarse, sino que se interpreta en tiempo de ejecución.
 
