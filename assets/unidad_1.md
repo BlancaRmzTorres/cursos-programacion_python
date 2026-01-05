@@ -529,11 +529,14 @@ La mayoría de distribuciones incluyen Python preinstalado, pero para la versió
 
 
 2. **Entornos virtuales** (recomendado para aislar proyectos):
+
 Crea un entorno:
 
 Actívalo:
+
 - Windows: `mi_entorno\Scripts\activate`
 - macOS/Linux: `source mi_entorno/bin/activate`
+- 
 Desactívalo: `deactivate`
 
 3. **Variables de entorno**: En Windows, asegúrate de que Python esté en PATH (lo hace el instalador si marcaste la opción).
