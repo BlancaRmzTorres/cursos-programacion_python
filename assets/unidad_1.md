@@ -279,14 +279,18 @@ Algunos módulos más útiles:
 Módulo	Descripción	
 
 Ejemplo de uso
-math	Funciones matemáticas	import math; math.sqrt(16) → 4.0
-random	Generación de números aleatorios	import random; random.randint(1, 10)
-datetime	Manejo de fechas y horas	from datetime import datetime; datetime.now()
-os	Interacción con el sistema operativo	import os; os.getcwd() → directorio actual
-sys	Acceso a parámetros y funciones del intérprete	import sys; sys.version
-json	Trabajar con JSON	import json; json.loads('{"nombre": "Ana"}')
-collections	Estructuras de datos avanzadas	from collections import Counter; Counter([1,1,2])
-itertools	Herramientas para iteradores	import itertools; list(itertools.combinations([1,2,3], 2))
+
+| Módulo        | Descripción                              | Ejemplo de uso |
+|--------------|------------------------------------------|---------------|
+| `math`       | Funciones matemáticas                    | `import math; math.sqrt(16)` → `4.0` |
+| `random`     | Generación de números aleatorios         | `import random; random.randint(1, 10)` |
+| `datetime`   | Manejo de fechas y horas                 | `from datetime import datetime; datetime.now()` |
+| `os`         | Interacción con el sistema operativo     | `import os; os.getcwd()` → directorio actual |
+| `sys`        | Acceso a parámetros del intérprete       | `import sys; sys.version` |
+| `json`       | Trabajo con datos en formato JSON        | `import json; json.loads('{"nombre": "Ana"}')` |
+| `collections`| Estructuras de datos avanzadas           | `from collections import Counter; Counter([1,1,2])` |
+| `itertools`  | Herramientas para trabajar con iteradores| `import itertools; list(itertools.combinations([1,2,3], 2))` |
+
 
 ```python
 ##Ejemplo práctico combinando varios:
