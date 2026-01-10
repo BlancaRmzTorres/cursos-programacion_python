@@ -40,10 +40,9 @@ else:
 
 ## 2.2 Instrucciones y Construcciones Funcionales
 
-Las **instrucciones** son órdenes que Python ejecuta.
-Las **estructuras de control** permiten tomar decisiones y repetir acciones.
+Las estructuras de control permiten modificar el flujo de ejecución de un programa.
 
-## Tipos principales:
+## Principales estructuras:
 
 - Condicionales (if, elif, else)
 
@@ -81,6 +80,8 @@ while contador <= 5:
 ## Variables
 
 En Python no es necesario indicar el tipo de dato
+
+Python asigna el tipo de dato automáticamente en tiempo de ejecución.
 
 ```python
 nombre = "Luis"
