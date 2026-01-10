@@ -7,7 +7,12 @@
 - 1.4.Importancia y alcance del lenguaje.
 - 1.5.Implementación del entorno de desarrollo (instalación, configuración, IDEs).
 
-_______________
+#### 2. [ALGORITMOS BÁSICOS Y DECLARACIONES](assets/unidad_2.md)
+- 2.1 Delimitadores y PEPs.
+- 2.2 Instrucciones y construcciones funcionales.
+- 2.3 Declaraciones de variables, funciones, clases y módulos.
+- 2.4 Tipado dinámico y manejo de excepciones.
+
 
 #### Referencias bibliográficas (APA)
 
