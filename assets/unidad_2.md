@@ -133,13 +133,13 @@ x = "Hola"
 
 Permite controlar errores y evitar que el programa se detenga.
 
+<img src="excepciones.png" alt="For Condicional" heigh='567' width='200'>
+
 ```python
 try:
     numero = int(input("Ingresa un número: "))
     resultado = 10 / numero
     print(resultado)
-except ZeroDivisionError:
-    print("Error: división entre cero")
 except ValueError:
     print("Error: entrada inválida")
 ```
