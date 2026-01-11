@@ -64,6 +64,8 @@ else:
 
 ## Ciclo for
 <img src="bloquefor.png" alt="For Condicional" heigh='278' width='327'>
+
+
 ```python
 for i in range(1, 6):
     print(i)
