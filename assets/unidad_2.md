@@ -15,6 +15,11 @@ Principios clave de PEP 8:
 - No mezclar tabuladores y espacios
 - Separar bloques lógicos con líneas en blanco
 
+### snake_case ##
+- Usar solo letras minúsculas
+- Separar las palabras con guiones bajos (_)
+- No usar espacios ni caracteres especiales
+
 ## ¿Qué es el pep 8?
 PEP8 Es una guía de codificación, la cual nos permite escribir código Python de una manera, mucho más legible y de forma consistente, a través de ciertas "reglas" y recomendaciones. 
 
