@@ -106,6 +106,7 @@ def sumar(a, b):
 ## Clases
 
 Permiten crear objetos con atributos y métodos.
+
 <img src="clases.png" alt="For Condicional" heigh='269' width='246'>
 
 
