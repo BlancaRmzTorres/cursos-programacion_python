@@ -133,7 +133,7 @@ x = "Hola"
 
 Permite controlar errores y evitar que el programa se detenga.
 
-<img src="excepciones.png" alt="For Condicional" heigh='567' width='200'>
+<img src="excepciones.png" alt="For Condicional" heigh='400' width='767'>
 
 ```python
 try:
