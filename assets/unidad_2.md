@@ -72,6 +72,7 @@ for i in range(1, 6):
 ```
 
 ## Ciclo while
+<img src="while.png" alt="For Condicional" heigh='319' width='296'>
 
 ```python
 contador = 1
