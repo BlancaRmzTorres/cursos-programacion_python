@@ -52,6 +52,7 @@ Las estructuras de control permiten modificar el flujo de ejecución de un progr
 
 <img src="ifCondicional.png" alt="If Condicional" heigh='147' width='302'>
 
+
 ```python
 calificacion = 7
 
