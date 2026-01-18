@@ -10,7 +10,7 @@ Python es un lenguaje multiparadigma que ofrece un soporte completo para la POO.
 ## 3.1 Herramientas de la Programación Orientada a Objetos
 
 ### Objetos
-Un **objeto** es una instancia de una clase. Representa una entidad concreta.
+Un **objeto** es una instancia de una clase (una plantilla), que encapsula datos (atributos) y comportamiento (métodos), permitiendo modelar entidades del mundo real, desde números y cadenas hasta estructuras más complejas, siendo un concepto fundamental de la Programación Orientada a Objetos (POO) donde todo es un objeto
 
 Ejemplo:
 - Clase: `Estudiante`
