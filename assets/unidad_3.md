@@ -97,6 +97,72 @@ e1.presentarse()
 
 Encapsulación (o encapsulamiento), en programación orientada a objetos, hace referencia a la capacidad que tiene un objeto de ocultar su estado, de manera que sus datos solo se puedan modificar por medio de las operaciones (métodos) que ofrece.
 
+La idea es proteger la información y evitar modificaciones incorrectas desde fuera del objeto.
+
+### Problema SIN encapsulamiento (ejemplo incorrecto)
+
+```python
+class Cuenta:
+    def __init__(self, saldo):
+        self.saldo = saldo  # atributo público
+```
+
+### Uso
+
+```python
+cuenta = Cuenta(1000)
+
+# Se puede modificar directamente (❌ mala práctica)
+cuenta.saldo = -500
+
+print(cuenta.saldo)
+```
+### Nota: El saldo puede quedar negativo sin ninguna validación.
+
+### Solución CON encapsulamiento
+#### Paso 1: Atributo privado
+En Python, se hace privado anteponiendo __ al nombre del atributo.
+
+```python
+class CuentaBancaria:
+    def __init__(self, saldo):
+        self.__saldo = saldo  # atributo privado
+```
+Esto evita el acceso directo:
+
+```python
+cuenta.__saldo   # ❌ Error
+```
+#### Paso 2: Métodos para acceder y modificar
+
+```python
+class CuentaBancaria:
+    def __init__(self, saldo):
+        self.__saldo = saldo
+
+    def mostrar_saldo(self):
+        return self.__saldo
+
+    def depositar(self, monto):
+        if monto > 0:
+            self.__saldo += monto
+
+    def retirar(self, monto):
+        if 0 < monto <= self.__saldo:
+            self.__saldo -= monto
+        else:
+            print("Monto inválido")
+```
+### Uso correcto:
+```python
+cuenta = CuentaBancaria(1000)
+
+cuenta.depositar(500)
+cuenta.retirar(300)
+
+print("Saldo final:", cuenta.mostrar_saldo())
+```
+
 ```python
 class CuentaBancaria:
     def __init__(self, saldo):
