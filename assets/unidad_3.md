@@ -39,40 +39,6 @@ class Coche:
         self.velocidad = velocidad 
 ```
 
-### Métodos
-Son funciones que definen el comportamiento de un objeto.
-
-```python
-class Coche:
-    def acelera(self):
-        self.velocidad = self.velocidad + self.acelaracion
-        print(self.velocidad)
-
-    def frena(self):
-        v = self.velocidad = v.self.acelacion
-            if v < 0:
-                v = 0
-            self.velocidad = 0
-```
-<img src="estClase.png" alt="If Condicional" heigh='449' width='971'>
-
-### Encapsulamiento
-Encapsulación (o encapsulamiento), en programación orientada a objetos, hace referencia a la capacidad que tiene un objeto de ocultar su estado, de manera que sus datos solo se puedan modificar por medio de las operaciones (métodos) que ofrece.
-
-```python
-class Cuenta:
-    def __init__(self, saldo):
-        self.__saldo = saldo
-```
-
-### Herencia
-Esto es, se pueden crear clases nuevas a partir de clases anteriormente creadas y aquellas pueden obtener los atributos, métodos, etc. de la clase de la que depende.
-
-### Polimorfismo
-Polimorfismo significa la capacidad de tomar más de una forma. Una operación puede presentar diferentes comportamientos en diferentes instancias. El comportamiento depende de los tipos de datos utilizados en la operación. El polimorfismo es ampliamente utilizado en la aplicación de la herencia.
-
----
-
 ### 3.2 Funciones principales y primitivas asociadas
 
 ```python
@@ -129,6 +95,8 @@ e1.presentarse()
 
 ### Encapsulamiento
 
+Encapsulación (o encapsulamiento), en programación orientada a objetos, hace referencia a la capacidad que tiene un objeto de ocultar su estado, de manera que sus datos solo se puedan modificar por medio de las operaciones (métodos) que ofrece.
+
 ```python
 class CuentaBancaria:
     def __init__(self, saldo):
@@ -143,6 +111,8 @@ class CuentaBancaria:
 ```
 
 ### Herencia
+
+Esto es, se pueden crear clases nuevas a partir de clases anteriormente creadas y aquellas pueden obtener los atributos, métodos, etc. de la clase de la que depende.
 
 ```python
 class Persona:
@@ -165,6 +135,8 @@ class Profesor(Persona):
 ```
 
 ### Polimorfismo
+
+Polimorfismo significa la capacidad de tomar más de una forma. Una operación puede presentar diferentes comportamientos en diferentes instancias. El comportamiento depende de los tipos de datos utilizados en la operación. El polimorfismo es ampliamente utilizado en la aplicación de la herencia.
 
 ```python
 class Perro:
