@@ -46,6 +46,7 @@ class Persona:
     def saludar(self):
         print("Hola")
 ```
+<img src="estClase.png" alt="If Condicional" heigh='147' width='302'>
 
 ### Encapsulamiento
 El almacenamiento de datos y funciones en una sola unidad (clase) es la encapsulación. Los datos no pueden ser accesibles desde fuera y sólo aquellas funciones que se almacenan en la clase pueden acceder a él.
