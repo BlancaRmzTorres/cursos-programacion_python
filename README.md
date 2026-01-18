@@ -13,6 +13,10 @@
 - 2.3 Declaraciones de variables, funciones, clases y módulos.
 - 2.4 Tipado dinámico y manejo de excepciones.
 
+#### 3. [MODELO DE OBJETOS Y PROGRAMACIÓN ORIENTADA A OBJETOS](assets/unidad_3.md)
+- 3.1 Herramientas de la programación orientada a objetos.
+- 3.2 Funciones principales y primitivas asociadas.
+- 3.3 Clases, métodos, herencia y otros conceptos.
 
 #### Referencias bibliográficas (APA)
 
