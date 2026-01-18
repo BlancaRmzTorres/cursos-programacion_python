@@ -49,7 +49,7 @@ class Persona:
 <img src="estClase.png" alt="If Condicional" heigh='449' width='971'>
 
 ### Encapsulamiento
-El almacenamiento de datos y funciones en una sola unidad (clase) es la encapsulación. Los datos no pueden ser accesibles desde fuera y sólo aquellas funciones que se almacenan en la clase pueden acceder a él.
+Encapsulación (o encapsulamiento), en programación orientada a objetos, hace referencia a la capacidad que tiene un objeto de ocultar su estado, de manera que sus datos solo se puedan modificar por medio de las operaciones (métodos) que ofrece.
 
 ```python
 class Cuenta:
