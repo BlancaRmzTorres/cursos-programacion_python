@@ -24,7 +24,7 @@ Ejemplo:
 Una **clase** es una colección de objetos de tipo similar. Una vez que se define una clase, cualquier objeto nuevo creado puede pertenecer a esa clase
 
 ```python
-class Persona:
+class Coche:
     pass
 ```
 
@@ -32,19 +32,27 @@ class Persona:
 Son las variables que describen el estado del objeto.
 
 ```python
-class Persona:
+class Coche:
     def __init__(self, nombre, edad):
-        self.nombre = nombre
-        self.edad = edad
+        self.color = color
+        self.aceleracion = aceleracion
+        self.velocidad = velocidad 
 ```
 
 ### Métodos
 Son funciones que definen el comportamiento de un objeto.
 
 ```python
-class Persona:
-    def saludar(self):
-        print("Hola")
+class Coche:
+    def acelera(self):
+        self.velocidad = self.velocidad + self.acelaracion
+        print(self.velocidad)
+
+    def frena(self):
+        v = self.velocidad = v.self.acelacion
+            if v < 0:
+                v = 0
+            self.velocidad = 0
 ```
 <img src="estClase.png" alt="If Condicional" heigh='449' width='971'>
 
