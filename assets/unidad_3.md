@@ -21,7 +21,7 @@ Ejemplo:
 ---
 
 ### Clases
-Una **clase** es un molde que define las características y comportamientos de los objetos.
+Una **clase** es una colección de objetos de tipo similar. Una vez que se define una clase, cualquier objeto nuevo creado puede pertenecer a esa clase
 
 ```python
 class Persona:
@@ -48,7 +48,7 @@ class Persona:
 ```
 
 ### Encapsulamiento
-Consiste en proteger los datos del objeto.
+El almacenamiento de datos y funciones en una sola unidad (clase) es la encapsulación. Los datos no pueden ser accesibles desde fuera y sólo aquellas funciones que se almacenan en la clase pueden acceder a él.
 
 ```python
 class Cuenta:
@@ -57,10 +57,10 @@ class Cuenta:
 ```
 
 ### Herencia
-Permite crear nuevas clases a partir de otras existentes.
+Esto es, se pueden crear clases nuevas a partir de clases anteriormente creadas y aquellas pueden obtener los atributos, métodos, etc. de la clase de la que depende.
 
 ### Polimorfismo
-Permite que diferentes clases implementen un mismo método de forma distinta.
+Polimorfismo significa la capacidad de tomar más de una forma. Una operación puede presentar diferentes comportamientos en diferentes instancias. El comportamiento depende de los tipos de datos utilizados en la operación. El polimorfismo es ampliamente utilizado en la aplicación de la herencia.
 
 ---
 
