@@ -5,6 +5,8 @@
 La **Programación Orientada a Objetos (POO)** es un paradigma de programación que organiza el software en torno a **objetos**, los cuales combinan datos y comportamientos.  
 Python es un lenguaje multiparadigma que ofrece un soporte completo para la POO.
 
+<img src="clasesObjeto.png" alt="If Condicional" heigh='147' width='302'>
+
 ---
 
 ## 3.1 Herramientas de la Programación Orientada a Objetos
