@@ -156,5 +156,17 @@ class Profesor(Persona):
 ### Polimorfismo
 
 ```python
+class Perro:
+    def sonido(self):
+        print("Guau")
+
+class Gato:
+    def sonido(self):
+        print("Miau")
+
+animales = [Perro(), Gato()]
+
+for animal in animales:
+    animal.sonido()
 
 ```
