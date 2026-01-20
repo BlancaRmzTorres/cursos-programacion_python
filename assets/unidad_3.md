@@ -42,7 +42,7 @@ class Coche:
 ### 3.2 Funciones principales y primitivas asociadas
 
 ```python
-__init__
+__init__ #Sirve para inicializar (dar valor) a los atributos del objeto
 ```
 Método constructor que inicializa el objeto.
 
