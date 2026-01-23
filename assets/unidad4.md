@@ -33,10 +33,13 @@ print("Suma:", a + b)
 print("Resta:", a - b)
 print("Producto:", a * b)
 ```
-**Salida**
-Suma: 15
-Resta: 3
-Producto: 54
+
+## 🧮 **Salida**
+
+> ### ✔️ Cálculos realizados
+> - **Suma:** `15`
+> - **Resta:** `3`
+> - **Producto:** `54`
 
 ### Tipo de número entero (float)
 ```python
