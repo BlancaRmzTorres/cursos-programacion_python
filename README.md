@@ -18,6 +18,12 @@
 - 3.2 Funciones principales y primitivas asociadas.
 - 3.3 Clases, métodos, herencia y otros conceptos.
 
+ #### 4. [TIPOS DE DATOS Y ALGORITMOS APLICADOS I](assets/unidad4.md)
+- 4.1 Números y secuencias.
+- 4.2 Conjuntos y cadenas de caracteres.
+- 4.3 Diccionarios y booleanos.
+- 4.4 Datos temporales. 
+
 #### Referencias bibliográficas (APA)
 
 > Aggarwal, C. C. (2018). *Neural networks and deep learning: A textbook*. Springer.
