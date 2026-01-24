@@ -43,7 +43,7 @@ print("Producto:", a * b)
 
 ### Tipo de número entero (float)
 ```python
-import math
+import math #es un módulo estándar que ofrece funciones matemáticas para números reales, incluyendo operaciones trigonométricas
 
 radio = float(input("Ingresa el radio: "))
 area = math.pi * radio**2
