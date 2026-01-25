@@ -64,8 +64,8 @@ print("Suma:", z1 + z2)
 print("Resta:", z1 - z2)
 ```
 #### 🧮 **Salida** ####
-> **Suma:** (4+6j)
-> **Resta:** (2+2j)
+> - **Suma:** (4+6j)
+> - **Resta:** (2+2j)
 
 ### Arreglos (listas)
 
@@ -88,11 +88,11 @@ print("Longitud:", len(arreglo))
 
 ```
 #### 🧮 **Salida** ####
-> **Arreglo:** [10, 20, 30, 40]
-> **Primer elemento:** 10
-> **Último elemento:** 40
-> **Arreglo modificado:** [10, 15, 200, 40, 50]
-> **Longitud:** 5
+> - **Arreglo:** [10, 20, 30, 40]
+> - **Primer elemento:** 10
+> - **Último elemento:** 40
+> - **Arreglo modificado:** [10, 15, 200, 40, 50]
+> - **Longitud:** 5
 
 ### Range (range(inicio, fin, paso))
 
@@ -106,11 +106,11 @@ for i in range(1, 6):
 ```
 
 #### 🧮 **Salida** ####
-- 1
-- 2
-- 3
-- 4
-- 5
+> - 1
+> - 2
+> - 3
+> - 4
+> - 5
 
 ### Complejos (complex) ###
 - Su parte real
