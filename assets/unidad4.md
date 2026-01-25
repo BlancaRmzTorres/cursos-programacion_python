@@ -50,6 +50,10 @@ area = math.pi * radio**2
 
 print("Área del círculo:", area)
 ```
+## 🧮 **Salida**
+
+> ### ✔️ Cálculos realizados
+> - **Área del círculo:** 95.03317777109125
 
 ### Tipo de número entero (complejos)
 ```python
@@ -59,6 +63,10 @@ z2 = 1 + 2j
 print("Suma:", z1 + z2)
 print("Resta:", z1 - z2)
 ```
+## 🧮 **Salida**
+> **Suma:** (4+6j)
+> **Resta:** (2+2j)
+
 ### Arreglos (listas)
 
 ```python
@@ -79,6 +87,13 @@ print("Arreglo modificado:", arreglo)
 print("Longitud:", len(arreglo))
 
 ```
+## 🧮 **Salida**
+> **Arreglo:** [10, 20, 30, 40]
+> **Primer elemento:** 10
+> **Último elemento:** 40
+> **Arreglo modificado:** [10, 15, 200, 40, 50]
+> **Longitud:** 5
+
 ### Range (range(inicio, fin, paso))
 
 - **inicio:** número inicial (incluido)
@@ -90,14 +105,20 @@ for i in range(1, 6):
     print(i)
 ```
 
+## 🧮 **Salida**
+- 1
+- 2
+- 3
+- 4
+- 5
+
 ### Complejos (complex) ###
 - Su parte real
 - Su parte imaginaria
 - Su módulo
 
-  z = complex(3, 4)
-
 ```python
+z = complex(3, 4)
 print("Parte real:", z.real)
 print("Parte imaginaria:", z.imag)
 print("Módulo:", abs(z))
@@ -130,6 +151,10 @@ print("Unión (|):", union_1)
 print("Unión (.union):", union_2)
 ```
 
+## 🧮 **Salida**
+> **Unión (|):** {1, 2, 3, 4, 5, 6}
+> **Unión (.union):** {1, 2, 3, 4, 5, 6}
+
 ### Intersección (A ∩ B) ###
 Devuelve los elementos que están en ambos conjuntos.
 
@@ -144,6 +169,10 @@ print("Intersección (&):", inter_1)
 print("Intersección (.intersection):", inter_2)
 ```
 
+## 🧮 **Salida**
+> **Intersección (&):** {3, 4}
+> **Intersección (.intersection):** {3, 4}
+
 ### Diferencia (A − B) ###
 Elementos que están en A pero no en B.
 
@@ -157,6 +186,9 @@ dif_2 = A.difference(B)
 print("Diferencia A - B:", dif_1)
 print("Diferencia (.difference):", dif_2)
 ```
+## 🧮 **Salida**
+> **Diferencia A - B:** {1, 2}
+> **Diferencia (.difference):** {1, 2}
 
 ### Manipulación de Cadenas en Python ###
 Las cadenas (str) en Python permiten operaciones como concatenar, dividir, buscar, entre muchas otras.
@@ -176,6 +208,10 @@ print(resultado)
 resultado2 = f"{texto1} {texto2}"
 print(resultado2)
 ```
+## 🧮 **Salida**
+> Hola Mundo
+> Hola Mundo
+
 ### 2. Dividir cadenas (split) ###
 ```python
 frase = "manzana,pera,uva,mango"
@@ -185,6 +221,10 @@ lista_frutas = frase.split(",")
 
 print(lista_frutas)   # ['manzana', 'pera', 'uva', 'mango']
 ```
+## 🧮 **Salida**
+> ['manzana', 'pera', 'uva', 'mango']
+
+
 ### 3. Buscar dentro de una cadena ###
 ```python
 texto = "Programar en Python es divertido."
@@ -197,6 +237,9 @@ print("Posición de 'Python':", pos)
 existe = "Python" in texto
 print("¿Está 'Python'? :",
 ```
+## 🧮 **Salida**
+> Posición de 'Python': 13
+> ¿Está 'Python'? True
 
 ### 4. Reemplazar texto (replace) ###
 ```python
@@ -205,6 +248,8 @@ nuevo = mensaje.replace("mundo", "Python")
 
 print(nuevo)  # Hola Python
 ```
+## 🧮 **Salida**
+> Hola Python
 
 ### 5. Cambiar mayúsculas/minúsculas ###
 ```python
@@ -215,6 +260,11 @@ print(cadena.lower())     # minúsculas
 print(cadena.title())     # Estilo Título
 print(cadena.capitalize()) # Solo primera letra en mayúscula
 ```
+## 🧮 **Salida**
+> PYTHON ES GENIAL
+> python es genial
+> Python Es Genial
+> Python es genial
 
 ### 6. Eliminar espacios (strip) ###
 ```python
@@ -225,6 +275,10 @@ print(texto.strip())   # elimina espacios al inicio y fin
 print(texto.lstrip())  # elimina espacios a la izquierda
 print(texto.rstrip())  # elimina espacios a la derecha
 ```
+## 🧮 **Salida**
+> hola python
+> hola python   
+>   hola python
 
 ### 7. Cortar subcadenas (slicing) ###
 ```python
@@ -236,6 +290,11 @@ print(texto[5:])    # FGHIJK
 print(texto[:3])    # ABC
 print(texto[-3:])   # IJK
 ```
+## 🧮 **Salida**
+> ABCD
+> FGHIJK
+> ABC
+> IJK
 
 ### 8. Contar ocurrencias ###
 ```python
@@ -245,6 +304,8 @@ frase = "banana"
 print(frase.count("a"))  # 3
 
 ```
+## 🧮 **Salida**
+> 3
 
 ### 9. Unir cadenas (join) ###
 ```python
@@ -255,6 +316,9 @@ resultado = " ".join(palabras)
 print(resultado)   # Hola mundo Python
 
 ```
+## 🧮 **Salida**
+> Hola mundo Pytron
+
 ### Tabla Resumen de Manipulación de Cadenas en Python ###
 
 | Operación                | Descripción                                    | Ejemplo Simplificado                           |
@@ -308,6 +372,11 @@ persona["ocupacion"] = "Desarrolladora"
 
 print(persona)
 ```
+## 🧮 **Salida**
+> Mariana
+> Aguascalientes
+> {'nombre': 'Mariana', 'edad': 30, 'ciudad': 'Aguascalientes', 'ocupacion': 'Desarrolladora'}
+
 ### 2. Ejemplo de Booleanos ###
 
 ```python
@@ -317,6 +386,10 @@ es_menor = False
 print(es_mayor)   # True
 print(es_menor)   # False
 ```
+
+## 🧮 **Salida**
+> True
+> False
 
 ### 3. Booleanos en condiciones ###
 
@@ -328,6 +401,8 @@ if edad >= 18:
 else:
     print("Eres menor de edad.")
 ```
+## 🧮 **Salida**
+> Eres mayor de edad.
 
 ### 4. Booleanos en control de flujo ###
 
@@ -338,6 +413,8 @@ while activo:
     print("El sistema está activo.")
     activo = False  # Finaliza el ciclo cambiando el booleano
 ```
+## 🧮 **Salida**
+> El sistema está activo.
 
 ### 5. Booleanos en validaciones ###
 
@@ -352,6 +429,8 @@ if es_valido:
 else:
     print("Acceso denegado.")
 ```
+## 🧮 **Salida**
+> Acceso permitido.
 
 ### Tabla Resumen: Diccionarios y Booleanos en Python ###
 
@@ -414,6 +493,14 @@ texto = "31-12-2025"
 fecha_parseada = datetime.strptime(texto, "%d-%m-%Y").date()
 print("Fecha parseada:", fecha_parseada)  # 2025-12-31
 ```
+## 🧮 **Salida**
+> Hoy: 2026-01-24
+> Cumpleaños: 1990-07-15
+> Año: 2026
+> Mes: 1
+> Día: 24
+> Formateado: 24/01/2026
+> Fecha parseada: 2025-12-31
 
 ### 2) Hora (time) ###
 ```python
@@ -435,6 +522,15 @@ print("Microsegundo:", hora_completa.microsecond)
 # Formatear hora
 print("Formateada:", hora_completa.strftime("%H:%M:%S"))  # 14:30:45
 ```
+
+## 🧮 **Salida**
+> Hora simple: 14:30:00
+> Hora completa: 14:30:45.123456
+> Hora: 14
+> Minuto: 30
+> Segundo: 45
+> Microsegundo: 123456
+> Formateada: 14:30:45
 
 ###  3) Fecha y hora (datetime) ###
 ```python
@@ -471,8 +567,18 @@ print("Fin:", fin)  # 2026-01-01 10:30:00
 # Diferencia entre dos datetimes (duración)
 delta = fin - inicio
 print("Delta en segundos:", delta.total_seconds())  # 9000.0
-``
 ```
+## 🧮 **Salida**
+> Ahora (local): 2026-01-24 19:13:54.253172
+> Ahora (UTC): 2026-01-25 01:13:54.254161+00:00
+> Evento: 2026-02-01 09:45:00
+> Formato legible: 01/02/2026 09:45 AM
+> Datetime parseado: 2026-03-10 18:20:00
+> Inicio: 2026-01-01 08:00:00
+> Duración: 2:30:00
+> Fin: 2026-01-01 10:30:00
+> Delta en segundos: 9000.0
+
 ### 4) Zonas horarias (básico con timezone) ###
 ```python
 from datetime import datetime, timezone, timedelta
@@ -486,6 +592,10 @@ print("Ahora UTC-6:", ahora_local)
 ahora_utc = ahora_local.astimezone(timezone.utc)
 print("Convertido a UTC:", ahora_utc)
 ```
+
+## 🧮 **Salida**
+> Ahora UTC-6: 2026-01-24 19:15:05.490774-06:00
+> Convertido a UTC: 2026-01-25 01:15:05.490774+00:00
 
 ### 5) Extra: zoneinfo (zonas reales con horario de verano) ###
 ```python
@@ -503,4 +613,6 @@ ahora_ny = ahora_mx.astimezone(ny)
 print("Nueva York:", ahora_ny)
 ```
 
-
+## 🧮 **Salida**
+> CDMX: 2026-01-24 19:29:00.065046-06:00
+> Nueva York: 2026-01-24 20:29:00.065046-05:00
