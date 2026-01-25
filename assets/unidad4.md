@@ -34,7 +34,7 @@ print("Resta:", a - b)
 print("Producto:", a * b)
 ```
 
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 
 > ### ✔️ Cálculos realizados
 > - **Suma:** `15`
@@ -50,7 +50,7 @@ area = math.pi * radio**2
 
 print("Área del círculo:", area)
 ```
-## 🧮 **Salida**
+##### 🧮 **Salida** ####
 
 > ### ✔️ Cálculos realizados
 > - **Área del círculo:** 95.03317777109125
@@ -63,7 +63,7 @@ z2 = 1 + 2j
 print("Suma:", z1 + z2)
 print("Resta:", z1 - z2)
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > **Suma:** (4+6j)
 > **Resta:** (2+2j)
 
@@ -87,7 +87,7 @@ print("Arreglo modificado:", arreglo)
 print("Longitud:", len(arreglo))
 
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > **Arreglo:** [10, 20, 30, 40]
 > **Primer elemento:** 10
 > **Último elemento:** 40
@@ -105,7 +105,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 - 1
 - 2
 - 3
@@ -151,7 +151,7 @@ print("Unión (|):", union_1)
 print("Unión (.union):", union_2)
 ```
 
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > **Unión (|):** {1, 2, 3, 4, 5, 6}
 > **Unión (.union):** {1, 2, 3, 4, 5, 6}
 
@@ -169,7 +169,7 @@ print("Intersección (&):", inter_1)
 print("Intersección (.intersection):", inter_2)
 ```
 
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > **Intersección (&):** {3, 4}
 > **Intersección (.intersection):** {3, 4}
 
@@ -186,7 +186,7 @@ dif_2 = A.difference(B)
 print("Diferencia A - B:", dif_1)
 print("Diferencia (.difference):", dif_2)
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > **Diferencia A - B:** {1, 2}
 > **Diferencia (.difference):** {1, 2}
 
@@ -208,7 +208,7 @@ print(resultado)
 resultado2 = f"{texto1} {texto2}"
 print(resultado2)
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > Hola Mundo
 > Hola Mundo
 
@@ -221,7 +221,7 @@ lista_frutas = frase.split(",")
 
 print(lista_frutas)   # ['manzana', 'pera', 'uva', 'mango']
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > ['manzana', 'pera', 'uva', 'mango']
 
 
@@ -237,7 +237,7 @@ print("Posición de 'Python':", pos)
 existe = "Python" in texto
 print("¿Está 'Python'? :",
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > Posición de 'Python': 13
 > ¿Está 'Python'? True
 
@@ -248,7 +248,7 @@ nuevo = mensaje.replace("mundo", "Python")
 
 print(nuevo)  # Hola Python
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > Hola Python
 
 ### 5. Cambiar mayúsculas/minúsculas ###
@@ -260,7 +260,7 @@ print(cadena.lower())     # minúsculas
 print(cadena.title())     # Estilo Título
 print(cadena.capitalize()) # Solo primera letra en mayúscula
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > PYTHON ES GENIAL
 > python es genial
 > Python Es Genial
@@ -275,7 +275,7 @@ print(texto.strip())   # elimina espacios al inicio y fin
 print(texto.lstrip())  # elimina espacios a la izquierda
 print(texto.rstrip())  # elimina espacios a la derecha
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > hola python
 > hola python   
 >   hola python
@@ -290,7 +290,7 @@ print(texto[5:])    # FGHIJK
 print(texto[:3])    # ABC
 print(texto[-3:])   # IJK
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > ABCD
 > FGHIJK
 > ABC
@@ -304,7 +304,7 @@ frase = "banana"
 print(frase.count("a"))  # 3
 
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > 3
 
 ### 9. Unir cadenas (join) ###
@@ -316,7 +316,7 @@ resultado = " ".join(palabras)
 print(resultado)   # Hola mundo Python
 
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > Hola mundo Pytron
 
 ### Tabla Resumen de Manipulación de Cadenas en Python ###
@@ -372,7 +372,7 @@ persona["ocupacion"] = "Desarrolladora"
 
 print(persona)
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > Mariana
 > Aguascalientes
 > {'nombre': 'Mariana', 'edad': 30, 'ciudad': 'Aguascalientes', 'ocupacion': 'Desarrolladora'}
@@ -387,7 +387,7 @@ print(es_mayor)   # True
 print(es_menor)   # False
 ```
 
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > True
 > False
 
@@ -413,7 +413,7 @@ while activo:
     print("El sistema está activo.")
     activo = False  # Finaliza el ciclo cambiando el booleano
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > El sistema está activo.
 
 ### 5. Booleanos en validaciones ###
@@ -429,7 +429,7 @@ if es_valido:
 else:
     print("Acceso denegado.")
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > Acceso permitido.
 
 ### Tabla Resumen: Diccionarios y Booleanos en Python ###
@@ -493,7 +493,7 @@ texto = "31-12-2025"
 fecha_parseada = datetime.strptime(texto, "%d-%m-%Y").date()
 print("Fecha parseada:", fecha_parseada)  # 2025-12-31
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > Hoy: 2026-01-24
 > Cumpleaños: 1990-07-15
 > Año: 2026
@@ -523,7 +523,7 @@ print("Microsegundo:", hora_completa.microsecond)
 print("Formateada:", hora_completa.strftime("%H:%M:%S"))  # 14:30:45
 ```
 
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > Hora simple: 14:30:00
 > Hora completa: 14:30:45.123456
 > Hora: 14
@@ -568,7 +568,7 @@ print("Fin:", fin)  # 2026-01-01 10:30:00
 delta = fin - inicio
 print("Delta en segundos:", delta.total_seconds())  # 9000.0
 ```
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > Ahora (local): 2026-01-24 19:13:54.253172
 > Ahora (UTC): 2026-01-25 01:13:54.254161+00:00
 > Evento: 2026-02-01 09:45:00
@@ -593,7 +593,7 @@ ahora_utc = ahora_local.astimezone(timezone.utc)
 print("Convertido a UTC:", ahora_utc)
 ```
 
-## 🧮 **Salida**
+#### 🧮 **Salida** ####
 > Ahora UTC-6: 2026-01-24 19:15:05.490774-06:00
 > Convertido a UTC: 2026-01-25 01:15:05.490774+00:00
 
