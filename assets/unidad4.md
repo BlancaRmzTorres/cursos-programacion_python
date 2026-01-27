@@ -348,17 +348,62 @@ Un ***booleano** representa valores lógicos:
 **- True**
 **- False**
 
+Los diccionarios en Python sirven para almacenar datos en pares clave–valor. Son una de las estructuras más útiles y flexibles del lenguaje.
+
 Se utilizan principalmente en:
 - Condiciones
 - Control de flujo
 - Validaciones
 
+### ¿Qué es un diccionario? ###
+Un diccionario es una colección de datos donde cada elemento tiene:
+
+- Una clave (key) → única
+- Un valor (value) → puede ser cualquier tipo de dato
+
+```python
+persona = {
+    "nombre": "Carlos",
+    "edad": 18,
+    "ciudad": "Aguascalientes"
+}
+```
+
+### ¿Para qué sirven? ###
+**1. Acceso rápido a datos**
+- Se accede al valor usando la clave, sin importar la posición:
+
+```python
+print(persona["nombre"])  # Carlos
+```
+### 2. Organizar información estructurada ###
+Se usan para representar objetos o entidades, como:
+
+- Datos de usuarios
+- Configuraciones
+- Registros
+
+### 3. Modificar datos fácilmente ###
+
+```python
+persona["edad"] = 31
+persona["profesion"] = "Desarrolladora"
+```
+
+### 4. Recorrer datos ###
+
+```python
+for clave, valor in persona.items():
+    print(clave, ":", valor)
+```
+
+  
 ### 1. Ejemplo de Diccionario (clave–valor) ###
 
 ```python
 # Diccionario con información de una persona
 persona = {
-    "nombre": "Blanca",
+    "nombre": "Alan",
     "edad": 30,
     "ciudad": "Aguascalientes"
 }
