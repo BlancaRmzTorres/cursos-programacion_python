@@ -18,11 +18,17 @@
 - 3.2 Funciones principales y primitivas asociadas.
 - 3.3 Clases, métodos, herencia y otros conceptos.
 
- #### 4. [TIPOS DE DATOS Y ALGORITMOS APLICADOS I](assets/unidad4.md)
+#### 4. [TIPOS DE DATOS Y ALGORITMOS APLICADOS I](assets/unidad4.md)
 - 4.1 Números y secuencias.
 - 4.2 Conjuntos y cadenas de caracteres.
 - 4.3 Diccionarios y booleanos.
-- 4.4 Datos temporales. 
+- 4.4 Datos temporales.
+
+#### 5. TIPOS DE DATOS Y ALGORITMOS APLICADOS II](assets/unidad5.md)
+- 5.1 Uso avanzado de listas, conjuntos, cadenas y diccionarios.
+- 5.2 Operaciones y métodos específicos.
+- 5.3 Gestión de fechas y horarios.
+- 5.4 Evaluación booleana y operaciones de conjunto.
 
 #### Referencias bibliográficas (APA)
 
