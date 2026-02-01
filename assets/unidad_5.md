@@ -43,3 +43,22 @@ Son ideales cuando:
 - **Mutables**
 - **Permiten duplicados**
 - **Acceso por índice**
+
+# Características clave de las listas en Python (con ejemplos)
+
+## 1) Listas **ordenadas**
+El orden de inserción se mantiene al acceder o recorrer.
+
+### Ejemplo 1
+```python
+numeros = [10, 20, 30]
+print(numeros)  # Output: [10, 20, 30]
+```
+
+
+
+
+
+
+
+
