@@ -24,7 +24,7 @@
 - 4.3 Diccionarios y booleanos.
 - 4.4 Datos temporales.
 
-#### 5. TIPOS DE DATOS Y ALGORITMOS APLICADOS II](assets/unidad5.md)
+#### 5. TIPOS DE DATOS Y ALGORITMOS APLICADOS II](assets/unidad_5.md)
 - 5.1 Uso avanzado de listas, conjuntos, cadenas y diccionarios.
 - 5.2 Operaciones y métodos específicos.
 - 5.3 Gestión de fechas y horarios.
