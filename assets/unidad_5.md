@@ -224,6 +224,11 @@ except ValueError:
 
 print("Todas las posiciones de 'OK':", posiciones)  # [0, 3, 4, 7, 9]
 ```
+#### 🧮 **Salida** ####
+> - count('OK'): 5
+> - count('ERR'): 3
+> - index('ERR', 2, 9): 5
+> - Todas las posiciones de 'OK': [0, 3, 4, 7, 9]
 
 ### Ejemplo 2: Normalización de datos + validación robusta con index y count
 
