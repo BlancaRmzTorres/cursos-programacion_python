@@ -4,7 +4,25 @@
 
 ### Fundamentación teórica
 
-En esta unidad se asume que el estudiante ya domina la creación y manipulación básica de **listas**, **conjuntos**, **cadenas** y **diccionarios**. El objetivo ahora es emplear estas estructuras de datos de manera avanzada, combinándolas para resolver problemas algorítmicos más complejos.
+### 1. Tipos de Datos y Estructuras de Datos en Python
+Python maneja datos básicos (primitivos) y estructuras de datos más complejas para organizar la información: 
+
+### Tipos Numéricos:
+> int: Enteros de precisión arbitraria (ej. 10, 1000).
+> float: Números de punto flotante (decimales, ej. 3.14).
+> complex: Números complejos (ej. 1 + 2j).
+
+### Texto y Lógicos:
+> str: Cadenas de caracteres (texto) encerradas entre comillas simples o dobles.
+>bool: Valores booleanos (True o False).
+
+### Estructuras de Datos (Secuencias y Mapeos):
+> Listas (list): Secuencias ordenadas, mutables y heterogéneas. Son muy versátiles para añadir/eliminar elementos.
+> Tuplas (tuple): Secuencias inmutables (no se pueden cambiar tras crearse). Usadas para datos que no deben modificarse.
+> Diccionarios (dict): Colecciones de pares clave-valor. Son extremadamente rápidos para búsquedas.
+> Conjuntos (set): Colecciones desordenadas de elementos únicos (sin duplicados). 
+
+El objetivo ahora es emplear estas estructuras de datos de manera avanzada, combinándolas para resolver problemas algorítmicos más complejos.
 
 Desde el punto de vista algorítmico, estas estructuras permiten:
 
