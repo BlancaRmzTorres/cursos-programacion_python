@@ -1,7 +1,5 @@
 ## Unidad 5. TIPOS DE DATOS Y ALGORITMOS APLICADOS II
 
-### 5.1 Uso avanzado de listas, conjuntos, cadenas y diccionarios
-
 ### Fundamentación teórica
 
 ### 1. Tipos de Datos y Estructuras de Datos en Python
@@ -32,6 +30,8 @@ Desde el punto de vista algorítmico, estas estructuras permiten:
 - Aplicar filtros, transformaciones y validaciones  
 
 El uso avanzado implica **pensar en términos de datos**, no solo en instrucciones.
+
+### 5.1 Uso avanzado de listas, conjuntos, cadenas y diccionarios
 
 ### Ejemplo 1: Filtrado avanzado con listas y diccionarios
 
