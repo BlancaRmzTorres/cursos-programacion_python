@@ -187,6 +187,8 @@ Las tuplas son inmutables, por lo que sus métodos son muy limitados.
 - **count(x)** → Cuenta ocurrencias
 - **index(x)** → Devuelve la posición
 
+<img src="tuplas.png" alt="If Condicional" heigh='147' width='302'>
+
 ### Ejemplo 1: Analizar datos y localizar posiciones con rangos (index con start/stop) + count
 Escenario: Tenemos un registro de códigos de estado en una tupla y queremos:
 
