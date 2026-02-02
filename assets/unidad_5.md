@@ -71,14 +71,214 @@ Donde:
 ### 5.2 Operaciones y métodos específicos
 Los métodos propios de cada tipo de dato permiten realizar operaciones optimizadas y seguras. Su correcto uso evita estructuras de control innecesarias y mejora la legibilidad del código.
 
-A nivel universitario, el dominio de métodos implica:
+### Cadenas (str)
+- **upper()** → Convierte a mayúsculas
+- **lower()** → Minúsculas
+- **strip()** → Quita espacios
+- **replace(a, b)** → Reemplaza
+- **split()** → Divide por separador
+- **startswith()** / endswith()
+- **find()** → Busca y devuelve posición
 
-- Uso de funciones internas optimizadas
-- Encadenamiento de métodos
-- Sustitución de ciclos manuales
-- Reducción de errores lógicos
+```python
+texto = "   Hola Mundo desde Python   "
+print("Cadena original:", repr(texto))
+
+print("upper():", texto.upper())
+print("lower():", texto.lower())
+print("strip():", repr(texto.strip()))
+print("replace('Mundo','Universo'):", texto.replace("Mundo", "Universo"))
+print("split():", texto.split())
+print("startswith('Hola'):", texto.strip().startswith("Hola"))
+print("endswith('Python'):", texto.strip().endswith("Python"))
+print("find('Mundo'):", texto.find("Mundo"))
+```
+
+#### 🧮 **Salida** ####
+
+> - Cadena original: '   Hola Mundo desde Python   '
+> - upper():    HOLA MUNDO DESDE PYTHON   
+> - lower():    hola mundo desde python   
+> - strip(): 'Hola Mundo desde Python'
+> - replace('Mundo','Universo'):    Hola Universo desde Python   
+> - split(): ['Hola', 'Mundo', 'desde', 'Python']
+> - startswith('Hola'): True
+> - endswith('Python'): True
+> - find('Mundo'): 8
+
+
+### Métodos específicos de listas
+- **append(x)** → Añade un elemento
+- **extend(iterable)** → Añade varios
+- **insert(i, x)** → Inserta en posición
+- **pop()** → Quita y devuelve
+- **remove(x)** → Elimina por valor
+- **sort()** → Ordena
+- **reverse()** → Invierte
+
+```python
+# Lista base
+numeros = [3, 1, 4]
+print("Inicial:", numeros)
+
+# 1) append(x) → Añade un elemento al final
+numeros.append(9)
+print("Después de append(9):", numeros)
+
+# 2) extend(iterable) → Añade varios elementos (iterable)
+numeros.extend([2, 6, 5])
+print("Después de extend([2, 6, 5]):", numeros)
+
+# 3) insert(i, x) → Inserta en una posición concreta
+numeros.insert(2, 7)   # Inserta 7 en índice 2
+print("Después de insert(2, 7):", numeros)
+
+# 4) pop() → Quita y devuelve el último elemento (o por índice)
+ultimo = numeros.pop()
+print("pop() devuelve:", ultimo)
+print("Lista tras pop():", numeros)
+
+# También podemos quitar por índice específico
+tercero = numeros.pop(2)   # quita el elemento en índice 2
+print("pop(2) devuelve:", tercero)
+print("Lista tras pop(2):", numeros)
+
+# 5) remove(x) → Elimina la primera aparición del valor x
+numeros.remove(1)  # si no existe, lanza ValueError
+print("Después de remove(1):", numeros)
+
+# 6) sort() → Ordena la lista (in-place). Por defecto ascendente.
+numeros.sort()
+print("Después de sort() ascendente:", numeros)
+
+# sort() con reverse=True para descendente
+numeros.sort(reverse=True)
+print("Después de sort(reverse=True) descendente:", numeros)
+
+# sort() con key para ordenar por criterio (ejemplo: valor absoluto)
+mixtos = [3, -10, 2, -5, 0]
+mixtos.sort(key=abs)
+print("Ordenado por valor absoluto (key=abs):", mixtos)
+
+# 7) reverse() → Invierte el orden actual (no ordena, solo invierte)
+numeros.reverse()
+print("Después de reverse():", numeros)
+
+```
+
+#### 🧮 **Salida** ####
+
+> - Inicial: [3, 1, 4]
+> - Después de append(9): [3, 1, 4, 9]
+> - Después de extend([2, 6, 5]): [3, 1, 4, 9, 2, 6, 5]
+> - Después de insert(2, 7): [3, 1, 7, 4, 9, 2, 6, 5]
+> - pop() devuelve: 5
+> - Lista tras pop(): [3, 1, 7, 4, 9, 2, 6]
+> - pop(2) devuelve: 7
+> - Lista tras pop(2): [3, 1, 4, 9, 2, 6]
+> - Después de remove(1): [3, 4, 9, 2, 6]
+> - Después de sort() ascendente: [2, 3, 4, 6, 9]
+> - Después de sort(reverse=True) descendente: [9, 6, 4, 3, 2]
+> - Ordenado por valor absoluto (key=abs): [0, 2, 3, -5, -10]
+> - Después de reverse(): [2, 3, 4, 6, 9]
+
+### Métodos para tuplas (tuple)
+Las tuplas son inmutables, por lo que sus métodos son muy limitados.
+- **count(x)** → Cuenta ocurrencias
+- **index(x)** → Devuelve la posición
+
+### Ejemplo 1: Analizar datos y localizar posiciones con rangos (index con start/stop) + count
+Escenario: Tenemos un registro de códigos de estado en una tupla y queremos:
+
+- Contar cuántas veces aparece un código específico.
+- Encontrar la primera posición donde aparece en un rango (sin revisar toda la tupla).
+- Iterar para encontrar todas las posiciones donde aparece.
+
+```python
+estados = ("OK", "ERR", "PEND", "OK", "OK", "ERR", "PEND", "OK", "ERR", "OK")
+
+# 1) Contar ocurrencias
+num_ok = estados.count("OK")
+num_err = estados.count("ERR")
+print("count('OK'):", num_ok)    # 5
+print("count('ERR'):", num_err)  # 3
+
+# 2) Buscar la primera aparición de 'ERR' entre índices 2 y 8 (stop es exclusivo)
+pos_err_parcial = estados.index("ERR", 2, 9)
+print("index('ERR', 2, 9):", pos_err_parcial)  # 5
+
+# 3) Encontrar todas las posiciones de 'OK' recorriendo con saltos de index
+objetivo = "OK"
+posiciones = []
+inicio = 0
+
+try:
+    while True:
+        i = estados.index(objetivo, inicio)
+        posiciones.append(i)
+        inicio = i + 1
+except ValueError:
+    pass  # No hay más coincidencias
+
+print("Todas las posiciones de 'OK':", posiciones)  # [0, 3, 4, 7, 9]
+```
+
+### Ejemplo 2: Normalización de datos + validación robusta con index y count
+
+Tenemos una tupla con categorías (posibles repeticiones y variaciones de mayúsculas). Queremos:
+
+Normalizar a mayúsculas.
+Verificar que una categoría objetivo existe (si no, dar un mensaje claro).
+Si existe, reportar cuántas veces aparece y todas sus posiciones.
+
+```python
+categorias = ("ventas", "Compras", "VENTAS", "Logística", "compras", "VENTAS", "calidad")
+
+# 1) Normalizamos a mayúsculas para análisis consistente
+normalizadas = tuple(cat.upper() for cat in categorias)
+print("Normalizadas:", normalizadas)
+# ('VENTAS', 'COMPRAS', 'VENTAS', 'LOGÍSTICA', 'COMPRAS', 'VENTAS', 'CALIDAD')
+
+objetivo = "VENTAS"
+
+# 2) Validación de existencia con count
+apariciones = normalizadas.count(objetivo)
+if apariciones == 0:
+    print(f"La categoría '{objetivo}' no está presente.")
+else:
+    print(f"'{objetivo}' aparece {apariciones} veces.")
+
+    # 3) Ubicar posiciones de forma segura con index y manejo de errores
+    posiciones = []
+    inicio = 0
+    try:
+        while True:
+            i = normalizadas.index(objetivo, inicio)
+            posiciones.append(i)
+            inicio = i + 1
+    except ValueError:
+        pass
+
+    print(f"Posiciones de '{objetivo}':", posiciones)
+```
+#### 🧮 **Salida** ####
+> - Normalizadas: ('VENTAS', 'COMPRAS', 'VENTAS', 'LOGÍSTICA', 'COMPRAS', 'VENTAS', 'CALIDAD')
+> - 'VENTAS' aparece 3 veces.
+> - Posiciones de 'VENTAS': [0, 2, 5]
+
+### Operaciones y métodos para diccionarios (dict)
+Los diccionarios administran información en pares clave–valor.
+- **keys()** → Claves
+- **values()** → Valores
+- **items()** → Pares clave-valor
+- **get(clave, defecto)** → Acceso seguro
+- **update(otro_dict)** → Mezcla
+- **pop(clave)** → Quita y devuelve un elemento
+- **clear()** → Limpia el diccionario
+
 
 ### Ejemplo 1: Ordenamiento avanzado con criterio personalizado
+
 
 ```python
 productos = [
