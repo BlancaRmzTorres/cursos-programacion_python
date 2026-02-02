@@ -107,7 +107,7 @@ print("find('Mundo'):", texto.find("Mundo"))
 > - find('Mundo'): 8
 
 
-### Métodos específicos de listas
+### Listas (list)
 - **append(x)** → Añade un elemento
 - **extend(iterable)** → Añade varios
 - **insert(i, x)** → Inserta en posición
@@ -182,7 +182,7 @@ print("Después de reverse():", numeros)
 > - Ordenado por valor absoluto (key=abs): [0, 2, 3, -5, -10]
 > - Después de reverse(): [2, 3, 4, 6, 9]
 
-### Métodos para tuplas (tuple)
+### Tuplas (tuple)
 Las tuplas son inmutables, por lo que sus métodos son muy limitados.
 - **count(x)** → Cuenta ocurrencias
 - **index(x)** → Devuelve la posición
@@ -266,7 +266,7 @@ else:
 > - 'VENTAS' aparece 3 veces.
 > - Posiciones de 'VENTAS': [0, 2, 5]
 
-### Operaciones y métodos para diccionarios (dict)
+### Diccionarios (dict)
 Los diccionarios administran información en pares clave–valor.
 - **keys()** → Claves
 - **values()** → Valores
