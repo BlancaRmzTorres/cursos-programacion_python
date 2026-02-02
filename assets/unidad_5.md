@@ -60,6 +60,11 @@ correos = ["a@mail.com", "b@mail.com", "a@mail.com", "c@mail.com"]
 correos_unicos = list(set(correos))
 print(correos_unicos)
 ```
+Donde:
+
+> - **set()** crea un conjunto, y los conjuntos no permiten elementos repetidos.
+> - **list()** convierte ese conjunto nuevamente en una lista.
+
 #### 🧮 **Salida** ####
 - ['c@mail.com', 'a@mail.com', 'b@mail.com']
 
