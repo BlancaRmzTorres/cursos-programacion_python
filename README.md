@@ -30,6 +30,12 @@
 - 5.3 Gestión de fechas y horarios.
 - 5.4 Evaluación booleana y operaciones de conjunto.
 
+#### 6. [APLICACIONES AVANZADAS DE PYTHON](assets/unidad_6.md)
+- 6.1 Problemáticas de codificación.
+- 6.2 Manipulaciones de bajo nivel.
+- 6.3 Uso del calendario y husos horarios.
+- 6.4 Características avanzadas de Python para el desarrollo rápido y la venta de desarrollos.
+
 #### Referencias bibliográficas (APA)
 
 > Aggarwal, C. C. (2018). *Neural networks and deep learning: A textbook*. Springer.
