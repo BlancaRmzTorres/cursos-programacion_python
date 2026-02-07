@@ -18,7 +18,39 @@ Las problemáticas de codificación surgen cuando el código crece en tamaño, c
 **Soluciones:**
 - Programación modular  
 - Uso de funciones pequeñas y clases  
-- Aplicación de principios SOLID  
+- Aplicación de principios SOLID
+
+#### Ejercicio
+
+##### ❌ Código con mala práctica
+```python
+total = 0
+
+def calcular():
+    global total
+    precios = [100, 200, 300]
+    for p in precios:
+        total += p
+    descuento = total * 0.1
+    total = total - descuento
+    print("Total final:", total)
+
+calcular()
+```
+##### ✅ Código mejorado
+```python
+def calcular_total(precios):
+    return sum(precios)
+
+def aplicar_descuento(total, tasa):
+    return total * (1 - tasa)
+
+precios = [100, 200, 300]
+total = calcular_total(precios)
+total_final = aplicar_descuento(total, 0.1)
+
+print("Total final:", total_final)
+```
 
 ---
 
@@ -32,6 +64,42 @@ Las problemáticas de codificación surgen cuando el código crece en tamaño, c
 - Pruebas unitarias (`unittest`, `pytest`)
 - Uso de registros de errores con `logging`
 
+#### Ejercicio
+##### ❌ Código sin manejo de errores
+
+```python
+def dividir(a, b):
+    return a / b
+
+print(dividir(10, 0))
+```
+
+##### ✅ Código con manejo de excepciones
+
+```python
+def dividir(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        return "Error: división entre cero"
+```
+
+##### ➕ Registro de errores
+
+```python
+import logging
+
+logging.basicConfig(level=logging.ERROR)
+
+def dividir(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        logging.error("División entre cero")
+        return None
+```
+
+
 ---
 
 ### 3. Bajo rendimiento
@@ -44,6 +112,31 @@ Las problemáticas de codificación surgen cuando el código crece en tamaño, c
 - Librerías optimizadas como NumPy y Pandas
 - Análisis de complejidad y *profiling*
 
+
+#### Ejercicio
+##### ❌ Código ineficiente
+
+```python
+numeros = []
+for i in range(100000):
+    numeros.append(i * 2)
+```
+
+##### ✅ Código optimizado
+
+```python
+numeros = [i * 2 for i in range(100000)]
+```
+
+##### ➕ Uso de NumPy
+
+```python
+import numpy as np
+
+numeros = np.arange(100000) * 2
+```
+
+
 ---
 
 ### 4. Problemas de compatibilidad
@@ -54,6 +147,13 @@ Las problemáticas de codificación surgen cuando el código crece en tamaño, c
 - Uso de entornos virtuales (`venv`)
 - Control de versiones
 - Manejo adecuado de dependencias (`requirements.txt`)
+
+#### Ejercicio
+```python
+python -m venv venv
+pip install pandas
+pip freeze > requirements.txt
+```
 
 ---
 
@@ -81,6 +181,17 @@ Son operaciones que trabajan directamente con:
 - Protocolos de comunicación
 - Compresión de datos
 
+#### Ejercicio
+
+```python
+a = 5   # 0101
+b = 3   # 0011
+
+print(a & b)   # AND
+print(a | b)   # OR
+print(a << 1)  # Desplazamiento
+```
+
 ---
 
 ### 2. Archivos binarios
@@ -92,12 +203,31 @@ Son operaciones que trabajan directamente con:
 - Audio
 - Archivos propietarios
 
+#### Ejercicio
+
+```python
+with open("datos.bin", "wb") as f:
+    f.write(b'\x01\x02\x03')
+
+with open("datos.bin", "rb") as f:
+    print(f.read())
+```
+
 ---
 
 ### 3. Gestión de memoria y rendimiento
 - Uso de `memoryview`
 - Optimización de estructuras de datos
 - Integración con código en C mediante extensiones
+
+#### Ejercicio
+
+```python
+datos = bytearray(b"Python")
+vista = memoryview(datos)
+vista[0] = ord('J')
+print(datos)
+#### 
 
 ---
 
@@ -110,6 +240,15 @@ Esto permite crear:
 - Automatizadores
 - Scripts administrativos
 - Herramientas de sistema
+
+#### Ejercicio
+
+```python
+import os
+
+print(os.getcwd())
+print(os.listdir())
+```
 
 ---
 
@@ -136,9 +275,18 @@ Python permite trabajar con:
 - Marcas de tiempo (*timestamps*)
 - Intervalos de tiempo
 
+#### Ejercicio
+
+```python
+from datetime import datetime
+
+ahora = datetime.now()
+print(ahora)
+```
+
 ---
 
-### 2. Husos horarios (*Time Zones*)
+### 2. Usos horarios (*Time Zones*)
 Un huso horario representa la diferencia horaria respecto a UTC.
 
 **Problemas comunes:**
@@ -153,6 +301,16 @@ Un huso horario representa la diferencia horaria respecto a UTC.
 - **Aware**: Incluye zona horaria explícita
 
 > En aplicaciones reales se recomienda trabajar siempre con fechas *aware*.
+
+#### Ejercicio
+
+```python
+from datetime import datetime
+from zoneinfo import ZoneInfo
+
+fecha = datetime.now(ZoneInfo("America/Mexico_City"))
+print(fecha)
+```
 
 ---
 
@@ -181,6 +339,20 @@ Python permite:
 - Librerías reutilizables
 - Automatización mediante scripts
 
+#### Ejercicio
+
+```python
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def inicio():
+    return "Hola, aplicación en Python"
+
+app.run()
+```
+
 ---
 
 ### 2. Programación orientada a objetos avanzada
@@ -194,6 +366,17 @@ Permite:
 - Fácil mantenimiento
 - Escalabilidad del proyecto
 
+#### Ejercicio
+
+```python
+from abc import ABC, abstractmethod
+
+class Pago(ABC):
+    @abstractmethod
+    def procesar(self):
+        pass
+```
+
 ---
 
 ### 3. Programación funcional
@@ -204,6 +387,13 @@ Permite:
 Útil para:
 - Procesamiento de datos
 - Código más expresivo y conciso
+
+#### Ejercicio
+
+```python
+numeros = [1, 2, 3, 4]
+cuadrados = list(map(lambda x: x**2, numeros))
+```
 
 ---
 
@@ -217,6 +407,12 @@ Fundamental para:
 - Venta de software
 - Entrega a clientes
 - Uso empresarial
+
+#### Ejercicio
+
+```python
+pip install setuptools wheel
+```
 
 ---
 
