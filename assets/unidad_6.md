@@ -456,9 +456,7 @@ Python se integra fácilmente con:
 ## Conclusión
 
 Las aplicaciones avanzadas de Python permiten evolucionar de:
-**scripts académicos**  
-a  
-**soluciones profesionales y comerciales**.
+**scripts académicos**  a  **soluciones profesionales y comerciales**.
 
 Dominar estos temas permite:
 - Escribir código eficiente y mantenible
