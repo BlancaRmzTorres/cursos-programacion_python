@@ -148,6 +148,9 @@ numeros = np.arange(100000) * 2
 - Control de versiones
 - Manejo adecuado de dependencias (`requirements.txt`)
 
+#### Entorno Virtuales
+En Python, un entorno virtual (virtual environment) es un espacio aislado donde instalas paquetes y ejecutas tu proyecto sin afectar al sistema ni a otros proyectos. Cada entorno tiene su propio intérprete de Python y su propio conjunto de dependencias (versiones de librerías), lo que evita “choques” entre proyectos.
+
 #### Ejercicio
 ```python
 python -m venv venv
@@ -155,6 +158,37 @@ pip install pandas
 pip freeze > requirements.txt
 ```
 
+#### Requirements.txt
+Un requirements.txt es un archivo de texto que lista todas las dependencias (paquetes) que necesita un proyecto de Python, normalmente con sus versiones exactas.
+Esto permite que cualquier persona o servidor pueda reproducir el entorno del proyecto de forma idéntica.
+
+#### ¿Para qué sirve?
+
+- Instalar todas las dependencias con un solo comando.
+- Garantizar que funcionen las mismas versiones que se usaron al desarrollar.
+- Es clave cuando usas entornos virtuales, despliegas en producción o compartes tu proyecto.
+
+ #### Ejemplo de requirements.txt
+```python
+flask==3.0.2
+requests==2.31.0
+numpy==1.26.4
+pandas==2.2.0
+```
+**Las dobles igual (==) indican una versión exacta.**
+
+##### 🛠️ ¿Cómo se crea?
+Dentro del entorno virtual activo:
+```python
+pip freeze > requirements.txt
+```
+**Eso genera el archivo automáticamente con todas las dependencias que tienes instaladas.**
+
+##### ¿Cómo se usa?
+Para instalar todo desde el archivo:
+```python
+pip install -r requirements.txt
+```
 ---
 
 ## 6.2 Manipulaciones de bajo nivel
