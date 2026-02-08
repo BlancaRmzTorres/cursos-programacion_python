@@ -218,14 +218,12 @@ with open("datos.bin", "rb") as f:
 - Integración con código en C mediante extensiones
 
 #### Ejercicio
-
 ```python
 datos = bytearray(b"Python")
 vista = memoryview(datos)
 vista[0] = ord('J')
 print(datos)
-
----
+```
 
 ### 4. Interacción con el sistema operativo
 - Gestión de procesos (`subprocess`)
