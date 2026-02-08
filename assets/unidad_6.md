@@ -191,9 +191,7 @@ print(a & b)   # AND
 print(a | b)   # OR
 print(a << 1)  # Desplazamiento
 ```
-
 ---
-
 ### 2. Archivos binarios
 - Lectura y escritura de archivos binarios
 - Uso del módulo `struct` para empaquetar datos
@@ -204,7 +202,6 @@ print(a << 1)  # Desplazamiento
 - Archivos propietarios
 
 #### Ejercicio
-
 ```python
 with open("datos.bin", "wb") as f:
     f.write(b'\x01\x02\x03')
