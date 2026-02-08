@@ -280,7 +280,7 @@ print(os.listdir())
 
 ---
 
-## 6.3 Uso del calendario y husos horarios
+## 6.3 Uso del calendario y usos horarios
 
 El manejo correcto del tiempo es crítico en aplicaciones reales.
 
