@@ -227,7 +227,6 @@ datos = bytearray(b"Python")
 vista = memoryview(datos)
 vista[0] = ord('J')
 print(datos)
-#### 
 
 ---
 
