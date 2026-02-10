@@ -136,7 +136,17 @@ import numpy as np
 numeros = np.arange(100000) * 2
 ```
 
+#### numpy.arange — ¿Qué significa?
+numpy.arange es una función de NumPy que genera arreglos (arrays) con valores numéricos igualmente espaciados.
 
+- inicio → valor inicial (incluido)
+- fin → valor final (no incluido)
+- paso → incremento entre cada número
+
+#### Ejemplo
+```python
+np.arange(2, 10, 2)
+```
 ---
 
 ### 4. Problemas de compatibilidad
