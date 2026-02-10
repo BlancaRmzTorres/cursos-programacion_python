@@ -342,7 +342,7 @@ print(ahora)
 ---
 
 ### 2. Usos horarios (*Time Zones*)
-Un huso horario representa la diferencia horaria respecto a UTC.
+Un uso horario representa la diferencia horaria respecto a UTC.
 
 **Problemas comunes:**
 - Cambios de horario de verano
