@@ -299,7 +299,7 @@ Esto permite crear:
 #### Ejercicio
 
 ```python
-import os
+import os #permite interactuar con el sistema operativo: archivos, directorios, variables de entorno, procesos, rutas, etc.
 
 print(os.getcwd())
 print(os.listdir())
