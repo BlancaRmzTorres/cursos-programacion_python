@@ -220,6 +220,23 @@ Son operaciones que trabajan directamente con:
 - Operadores bit a bit (`&`, `|`, `^`, `<<`, `>>`)
 - Conversión entre representaciones binarias
 
+**>> a * (2^b) (multiplicar por 2 elevado a b)**
+
+#### Ejemplo 
+```python
+3 << 1  # 3 * 2 = 6
+3 << 2  # 3 * 4 = 12
+3 << 3  # 3 * 8 = 24
+```
+
+**<< a // (2^b) (dividir entre potencias de 2 usando división entera)**
+#### Ejemplo
+```python
+19 >> 1   # 19 // 2 = 9
+19 >> 2   # 19 // 4 = 4
+19 >> 3   # 19 // 8 = 2
+```
+
 **Aplicaciones comunes:**
 - Criptografía
 - Protocolos de comunicación
