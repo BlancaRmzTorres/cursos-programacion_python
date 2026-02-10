@@ -357,6 +357,50 @@ Un huso horario representa la diferencia horaria respecto a UTC.
 
 > En aplicaciones reales se recomienda trabajar siempre con fechas *aware*.
 
+#### Fechas naive vs aware en Python
+En Python, los objetos datetime pueden ser:
+🔹 Naive (ingenuos)
+- No tienen información de zona horaria
+- Son simplemente fecha + hora
+- Python no sabe si es UTC, hora local, o de otra región
+
+Son peligrosos cuando trabajas con:
+- APIs
+- Bases de datos
+- Sistemas distribuidos
+- Tareas programadas
+- Conversión entre países
+
+Un datetime naive es como una hora sin contexto: “Son las 3”… ¿pero de qué país?
+
+🔹 Aware (conscientes de zona horaria)
+- Incluyen una zona horaria explícita (tzinfo)
+
+**Python puede:**
+- Convertir entre zonas horarias
+- Ajustar automáticamente por horario de verano
+- Comparar fechas correctamente
+- Almacenar tiempos en UTC y mostrar en local
+
+Un datetime aware siempre sabe de dónde proviene esa hora.
+
+**¿Por qué conviene usar aware en aplicaciones reales?**
+Usar fechas aware evita errores como:
+✔ Horas duplicadas
+- Ejemplo: cuando cambia el horario de verano
+- (la 1:00 AM ocurre dos veces en muchos países)
+✔ Horas que “desaparecen”
+- Cuando adelantan el reloj
+- (horas saltadas por DST)
+✔ Comparaciones incorrectas
+- Si comparas una fecha naive con una aware Python te dará errores o resultados inconsistentes.
+✔ Procesamiento distribuido
+- En microservicios, logs, bases de datos, contenedores…
+- si no usas aware, cada servicio podría interpretar la hora de manera distinta.
+✔ Sincronización con sistemas externos
+- APIs modernas exigen UTC o zonas horarias correctas. 
+
+
 #### Ejercicio
 
 ```python
